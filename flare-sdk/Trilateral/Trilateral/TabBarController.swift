@@ -12,7 +12,7 @@ import UIKit
 class TabBarController : UITabBarController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.selectedIndex = 1
+        self.selectedIndex = 4
         self.tabBar.hidden = true
     }
 }

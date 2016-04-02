@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4287AF701CAF456400F4D46F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF6F1CAF456400F4D46F /* TabBarController.swift */; };
+		4287AF721CAFC1F300F4D46F /* CatalogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF711CAFC1F300F4D46F /* CatalogCell.swift */; };
 		C94290E71C1B83A400FFAA84 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94290E61C1B83A400FFAA84 /* ColorButton.swift */; };
 		C95CEBF91C1209B100C3A226 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBF81C1209B100C3A226 /* CompassView.swift */; };
 		C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBFA1C163A1700C3A226 /* DeviceController.swift */; };
@@ -93,6 +94,7 @@
 
 /* Begin PBXFileReference section */
 		4287AF6F1CAF456400F4D46F /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4287AF711CAFC1F300F4D46F /* CatalogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogCell.swift; sourceTree = "<group>"; };
 		C94290E61C1B83A400FFAA84 /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		C95CEBF81C1209B100C3A226 /* CompassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		C95CEBFA1C163A1700C3A226 /* DeviceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
@@ -138,7 +140,7 @@
 		C98970741B81E90900DAB978 /* Flare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Flare.framework; path = "../../Flare/Output/Release-iphoneos/Flare.framework"; sourceTree = "<group>"; };
 		C98970761B81E91700DAB978 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = "../../SocketIO/Output/Release-iphoneos/SocketIO.framework"; sourceTree = "<group>"; };
 		C9C2DF131B98A334009E51AE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		C9D1AA3D1AC1F5850003B8A1 /* Trilateral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trilateral.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D1AA3D1AC1F5850003B8A1 /* XFCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D1AA411AC1F5850003B8A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9D1AA421AC1F5850003B8A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9D1AA441AC1F5850003B8A1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				C9D397681C18CEB8006E6343 /* CompassViewController.swift */,
 				C9D3976A1C18D424006E6343 /* NearbyThingController.swift */,
 				C95E8F9F1C6125AE00C30E8E /* CatalogController.swift */,
+				4287AF711CAFC1F300F4D46F /* CatalogCell.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -247,7 +250,7 @@
 		C9D1AA3E1AC1F5850003B8A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C9D1AA3D1AC1F5850003B8A1 /* Trilateral.app */,
+				C9D1AA3D1AC1F5850003B8A1 /* XFCA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -307,7 +310,7 @@
 			);
 			name = XFCA;
 			productName = Trilateral;
-			productReference = C9D1AA3D1AC1F5850003B8A1 /* Trilateral.app */;
+			productReference = C9D1AA3D1AC1F5850003B8A1 /* XFCA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -404,6 +407,7 @@
 				C9D1AA7A1AC4575D0003B8A1 /* IndoorMap.swift in Sources */,
 				C95CEBF91C1209B100C3A226 /* CompassView.swift in Sources */,
 				4287AF701CAF456400F4D46F /* TabBarController.swift in Sources */,
+				4287AF721CAFC1F300F4D46F /* CatalogCell.swift in Sources */,
 				C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */,
 				C9D397691C18CEB8006E6343 /* CompassViewController.swift in Sources */,
 				C9D1AA451AC1F5850003B8A1 /* MapViewController.swift in Sources */,
@@ -528,7 +532,7 @@
 					"../SocketIO/Output/Release-iphoneos",
 				);
 				INFOPLIST_FILE = Trilateral/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.xebia.xfuturecity.projecta-bis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -547,7 +551,7 @@
 					"../SocketIO/Output/Release-iphoneos",
 				);
 				INFOPLIST_FILE = Trilateral/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.xebia.xfuturecity.projecta-bis";
 				PRODUCT_NAME = "$(TARGET_NAME)";

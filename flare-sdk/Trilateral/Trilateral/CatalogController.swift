@@ -9,14 +9,25 @@
 import UIKit
 import Flare
 
-class CatalogController: UITableViewController, FlareController {
+extension Device {
+    var normalizedAngle: CGFloat {
+        let originalAngle = self.angle()
+        return originalAngle < 0 ? CGFloat(360 - originalAngle) : CGFloat(originalAngle)
+    }
+}
+
+@available(iOS 9.0, *)
+class CatalogController: UIViewController, UICollectionViewDataSource, FlareController {
     
+    @IBOutlet weak var collectionView: UICollectionView!
     var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-    let thingCellIdentifier = "ThingCell"
+    let thingCellIdentifier = "Cell"
+    var thingsSortedByAngle = [Thing]()
     
     var currentEnvironment: Environment? { didSet(value) {
-        self.tableView.reloadData()
-        }}
+        self.collectionView.reloadData()
+    }}
+    
     var currentZone: Zone?
     var device: Device?
     var nearbyThing: Thing? { didSet(value) {
@@ -26,62 +37,65 @@ class CatalogController: UITableViewController, FlareController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
         appDelegate.flareController = self
         appDelegate.updateFlareController()
-        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.itemSize = CGSizeMake(300, self.view.frame.height)
         dataChanged()
     }
-    
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         if currentEnvironment == nil { return 0 }
         return currentEnvironment!.zones.count
     }
     
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if currentEnvironment == nil { return "" }
-        return currentEnvironment!.zones[section].name
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return thingsSortedByAngle.count
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currentEnvironment!.zones[section].things.count
-    }
-
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(thingCellIdentifier) as! ThingCell
-        cell.device = device
-        cell.thing = currentEnvironment!.zones[indexPath.section].things[indexPath.row]
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(thingCellIdentifier, forIndexPath: indexPath) as! CatalogCell
+        cell.update(thingsSortedByAngle[indexPath.item])
         return cell
     }
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if currentEnvironment != nil {
-            let thing = currentEnvironment!.zones[indexPath.section].things[indexPath.row]
-            appDelegate.nearbyThing = thing
-        }
-    }
-    
-    func dataChanged() {
-        if currentEnvironment != nil {
-            for zone in currentEnvironment!.zones {
-                zone.things.sortInPlace({
-                    return device!.distanceTo($0) < device!.distanceTo($1)
-                })
-            }
 
-            self.tableView.reloadData()
-            
-            for (section, zone) in currentEnvironment!.zones.enumerate() {
-                for (row, thing) in zone.things.enumerate() {
-                    if thing == nearbyThing {
-                        self.tableView.selectRowAtIndexPath(NSIndexPath(forRow: row, inSection: section), animated: false, scrollPosition: .None)
-                    }
-                }
-            }
+    func dataChanged() {
+        guard let currentEnvironment = self.currentEnvironment, device = device else {
+            return
         }
+        thingsSortedByAngle = currentEnvironment.zones[0].things.sort {
+            device.angleTo($0) < device.angleTo($1)
+        }
+        collectionView.reloadData()
     }
     
     func animate() {
-        // self.tableView.reloadData()
+        guard let device = device else {
+            return
+        }
+        
+        let convertedOffset = device.normalizedAngle / 360.0 * collectionView.contentSize.width
+        
+        UIView.animateWithDuration(0.15, delay: 0, options: [.BeginFromCurrentState, .AllowUserInteraction, .CurveEaseOut], animations: {
+            self.collectionView.contentOffset = CGPointMake(convertedOffset, 0)
+        }, completion: nil)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.addDebugModeRecognizer()
+    }
+    
+    func addDebugModeRecognizer() {
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CompassViewController.toggleDebug))
+        gestureRecognizer.numberOfTapsRequired = 3
+        self.view.addGestureRecognizer(gestureRecognizer)
+    }
+    
+    func toggleDebug() {
+        guard let tabBar = self.tabBarController?.tabBar else {
+            return
+        }
+        tabBar.hidden = !tabBar.hidden
     }
 }

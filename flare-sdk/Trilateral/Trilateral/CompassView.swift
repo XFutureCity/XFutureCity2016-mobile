@@ -172,6 +172,7 @@ class CompassView: UIView, FlareController {
         return (angle * (flipped ? -1 : 1) + heading - offset) % 360.0
     }
     
+    // Size of the fin
     func sweepForDistance(distance: CGFloat) -> CGFloat {
         if distance < minDistance {
             return maxSweep
