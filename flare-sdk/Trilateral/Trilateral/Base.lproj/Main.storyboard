@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="RobotoCondensed-Bold.ttf">
+            <string>RobotoCondensed-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Compass-->
         <scene sceneID="FHK-ta-WdB">
@@ -84,6 +89,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Compass" image="Compass" id="1Mc-jP-hRW"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="750"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="compass" destination="ZT4-A6-mbA" id="ycR-eH-Y6f"/>
                     </connections>
@@ -420,21 +427,57 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFF-Gw-V0g">
-                                                    <rect key="frame" x="78" y="321" width="164" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YOQ-D0-FRl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ue-VM-C9A">
+                                                    <rect key="frame" x="8" y="222" width="304" height="120"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFF-Gw-V0g">
+                                                            <rect key="frame" x="8" y="8" width="288" height="104"/>
+                                                            <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="26"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="SFF-Gw-V0g" firstAttribute="top" secondItem="3Ue-VM-C9A" secondAttribute="top" constant="8" id="9pN-xr-bBt"/>
+                                                        <constraint firstItem="SFF-Gw-V0g" firstAttribute="leading" secondItem="3Ue-VM-C9A" secondAttribute="leading" constant="8" id="GWk-yx-1jh"/>
+                                                        <constraint firstAttribute="trailing" secondItem="SFF-Gw-V0g" secondAttribute="trailing" constant="8" id="O3I-La-WqK"/>
+                                                        <constraint firstAttribute="height" constant="120" id="Ow1-Hn-mGE"/>
+                                                        <constraint firstAttribute="bottom" secondItem="SFF-Gw-V0g" secondAttribute="bottom" constant="8" id="l9c-d5-pSq"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass.png" translatesAutoresizingMaskIntoConstraints="NO" id="u1u-Hk-rhE">
+                                                    <rect key="frame" x="287" y="191" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="7Jv-Kk-RgY"/>
+                                                        <constraint firstAttribute="width" constant="25" id="nTy-K4-SY3"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="SFF-Gw-V0g" firstAttribute="bottom" secondItem="bjM-oh-Lzc" secondAttribute="bottomMargin" id="Ajp-W9-zBi"/>
-                                            <constraint firstItem="SFF-Gw-V0g" firstAttribute="leading" secondItem="bjM-oh-Lzc" secondAttribute="leadingMargin" constant="70" id="J1d-j7-PPC"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="SFF-Gw-V0g" secondAttribute="trailing" constant="70" id="Unf-CZ-K1f"/>
+                                            <constraint firstItem="YOQ-D0-FRl" firstAttribute="top" secondItem="bjM-oh-Lzc" secondAttribute="top" id="6zj-uC-fZa"/>
+                                            <constraint firstItem="u1u-Hk-rhE" firstAttribute="trailing" secondItem="bjM-oh-Lzc" secondAttribute="trailingMargin" id="E2s-jV-jjr"/>
+                                            <constraint firstAttribute="bottom" secondItem="YOQ-D0-FRl" secondAttribute="bottom" id="LZe-zC-ehl"/>
+                                            <constraint firstItem="3Ue-VM-C9A" firstAttribute="trailing" secondItem="bjM-oh-Lzc" secondAttribute="trailingMargin" id="N23-qu-PS7"/>
+                                            <constraint firstItem="3Ue-VM-C9A" firstAttribute="top" secondItem="u1u-Hk-rhE" secondAttribute="bottom" constant="6" id="YAV-Ia-NkC"/>
+                                            <constraint firstItem="YOQ-D0-FRl" firstAttribute="leading" secondItem="bjM-oh-Lzc" secondAttribute="leading" id="YuJ-kv-ufX"/>
+                                            <constraint firstItem="3Ue-VM-C9A" firstAttribute="leading" secondItem="bjM-oh-Lzc" secondAttribute="leadingMargin" id="emL-px-hgW"/>
+                                            <constraint firstAttribute="trailing" secondItem="YOQ-D0-FRl" secondAttribute="trailing" id="jnW-25-Bri"/>
+                                            <constraint firstItem="3Ue-VM-C9A" firstAttribute="bottom" secondItem="bjM-oh-Lzc" secondAttribute="bottomMargin" id="jqv-tv-Wac"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="cardContainer" destination="3Ue-VM-C9A" id="Rht-WZ-yBD"/>
+                                            <outlet property="imageView" destination="YOQ-D0-FRl" id="9VM-78-dTS"/>
                                             <outlet property="nameLabel" destination="SFF-Gw-V0g" id="GKy-8w-xX3"/>
                                         </connections>
                                     </collectionViewCell>
@@ -596,5 +639,6 @@
         <image name="Logo" width="225" height="225"/>
         <image name="Map" width="25" height="25"/>
         <image name="Thing" width="25" height="25"/>
+        <image name="compass.png" width="50" height="50"/>
     </resources>
 </document>

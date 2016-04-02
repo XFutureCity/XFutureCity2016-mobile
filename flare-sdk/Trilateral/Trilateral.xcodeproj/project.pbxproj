@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		4287AF701CAF456400F4D46F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF6F1CAF456400F4D46F /* TabBarController.swift */; };
 		4287AF721CAFC1F300F4D46F /* CatalogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF711CAFC1F300F4D46F /* CatalogCell.swift */; };
+		4287AF791CAFDAE900F4D46F /* entrance-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF761CAFDAE900F4D46F /* entrance-1.jpg */; };
+		4287AF7A1CAFDAE900F4D46F /* entrance-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF771CAFDAE900F4D46F /* entrance-2.jpg */; };
+		4287AF7B1CAFDAE900F4D46F /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF781CAFDAE900F4D46F /* RobotoCondensed-Bold.ttf */; };
+		4287AF7E1CAFE3E800F4D46F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF7D1CAFE3E800F4D46F /* UIColor+Extensions.swift */; };
+		4287AF801CAFE4F300F4D46F /* opera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF7F1CAFE4F300F4D46F /* opera.jpg */; };
+		4287AF821CAFF14800F4D46F /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF811CAFF14800F4D46F /* compass.png */; };
 		C94290E71C1B83A400FFAA84 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94290E61C1B83A400FFAA84 /* ColorButton.swift */; };
 		C95CEBF91C1209B100C3A226 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBF81C1209B100C3A226 /* CompassView.swift */; };
 		C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBFA1C163A1700C3A226 /* DeviceController.swift */; };
@@ -95,6 +101,12 @@
 /* Begin PBXFileReference section */
 		4287AF6F1CAF456400F4D46F /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4287AF711CAFC1F300F4D46F /* CatalogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogCell.swift; sourceTree = "<group>"; };
+		4287AF761CAFDAE900F4D46F /* entrance-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "entrance-1.jpg"; sourceTree = "<group>"; };
+		4287AF771CAFDAE900F4D46F /* entrance-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "entrance-2.jpg"; sourceTree = "<group>"; };
+		4287AF781CAFDAE900F4D46F /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		4287AF7D1CAFE3E800F4D46F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		4287AF7F1CAFE4F300F4D46F /* opera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = opera.jpg; sourceTree = "<group>"; };
+		4287AF811CAFF14800F4D46F /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass.png; sourceTree = "<group>"; };
 		C94290E61C1B83A400FFAA84 /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		C95CEBF81C1209B100C3A226 /* CompassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		C95CEBFA1C163A1700C3A226 /* DeviceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
@@ -169,6 +181,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4287AF751CAFDAE900F4D46F /* Rersouces */ = {
+			isa = PBXGroup;
+			children = (
+				4287AF811CAFF14800F4D46F /* compass.png */,
+				4287AF7F1CAFE4F300F4D46F /* opera.jpg */,
+				4287AF761CAFDAE900F4D46F /* entrance-1.jpg */,
+				4287AF771CAFDAE900F4D46F /* entrance-2.jpg */,
+				4287AF781CAFDAE900F4D46F /* RobotoCondensed-Bold.ttf */,
+			);
+			name = Rersouces;
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		4287AF7C1CAFE3DA00F4D46F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4287AF7D1CAFE3E800F4D46F /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C95E8F541C5C115F00C30E8E /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +291,8 @@
 		C9D1AA3F1AC1F5850003B8A1 /* Trilateral */ = {
 			isa = PBXGroup;
 			children = (
+				4287AF7C1CAFE3DA00F4D46F /* Extensions */,
+				4287AF751CAFDAE900F4D46F /* Rersouces */,
 				C9D1AA421AC1F5850003B8A1 /* AppDelegate.swift */,
 				C9887ECE1C18EEDB008FBD21 /* View Controllers */,
 				C9887ECF1C18EEE4008FBD21 /* Views */,
@@ -363,6 +398,7 @@
 				C95E8F851C5C115F00C30E8E /* dagarn-lightblue.png in Resources */,
 				C95E8F951C5C115F00C30E8E /* karlstad-yellow.png in Resources */,
 				C95E8F881C5C115F00C30E8E /* erska-orange.png in Resources */,
+				4287AF7B1CAFDAE900F4D46F /* RobotoCondensed-Bold.ttf in Resources */,
 				C9D397671C18B3FD006E6343 /* Settings.bundle in Resources */,
 				C95E8F8D1C5C115F00C30E8E /* kallax-birch.png in Resources */,
 				C9D1AA481AC1F5850003B8A1 /* Main.storyboard in Resources */,
@@ -378,9 +414,11 @@
 				C95E8F7A1C5C115F00C30E8E /* arholma-blue.png in Resources */,
 				C95E8F891C5C115F00C30E8E /* erska-purple.png in Resources */,
 				C95E8F841C5C115F00C30E8E /* dagarn-green.png in Resources */,
+				4287AF791CAFDAE900F4D46F /* entrance-1.jpg in Resources */,
 				C95E8F7E1C5C115F00C30E8E /* arholma-white.png in Resources */,
 				C95E8F941C5C115F00C30E8E /* karlstad-white.png in Resources */,
 				C95E8F861C5C115F00C30E8E /* dagarn-purple.png in Resources */,
+				4287AF7A1CAFDAE900F4D46F /* entrance-2.jpg in Resources */,
 				C95E8F871C5C115F00C30E8E /* dagarn-red.png in Resources */,
 				C95E8F961C5C115F00C30E8E /* knislinge-black.png in Resources */,
 				C95E8F7B1C5C115F00C30E8E /* arholma-green.png in Resources */,
@@ -388,11 +426,13 @@
 				C95E8F8A1C5C115F00C30E8E /* erska-red.png in Resources */,
 				C95E8F991C5C115F00C30E8E /* knislinge-red.png in Resources */,
 				C95E8F7D1C5C115F00C30E8E /* arholma-red.png in Resources */,
+				4287AF821CAFF14800F4D46F /* compass.png in Resources */,
 				C95E8F7F1C5C115F00C30E8E /* coombe-black.png in Resources */,
 				C95E8F931C5C115F00C30E8E /* karlstad-turquoise.png in Resources */,
 				C95E8F8E1C5C115F00C30E8E /* kallax-black.png in Resources */,
 				C9D1AA4A1AC1F5850003B8A1 /* Images.xcassets in Resources */,
 				C95E8F821C5C115F00C30E8E /* coombe-red.png in Resources */,
+				4287AF801CAFE4F300F4D46F /* opera.jpg in Resources */,
 				C95E8F911C5C115F00C30E8E /* karlstad-magenta.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +447,7 @@
 				C9D1AA7A1AC4575D0003B8A1 /* IndoorMap.swift in Sources */,
 				C95CEBF91C1209B100C3A226 /* CompassView.swift in Sources */,
 				4287AF701CAF456400F4D46F /* TabBarController.swift in Sources */,
+				4287AF7E1CAFE3E800F4D46F /* UIColor+Extensions.swift in Sources */,
 				4287AF721CAFC1F300F4D46F /* CatalogCell.swift in Sources */,
 				C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */,
 				C9D397691C18CEB8006E6343 /* CompassViewController.swift in Sources */,

@@ -26,6 +26,11 @@ class CatalogController: UIViewController, UICollectionViewDataSource, FlareCont
     
     var currentEnvironment: Environment? { didSet(value) {
         self.collectionView.reloadData()
+        
+        // Set current position (for demo)
+        if let device = device {
+            appDelegate.flareManager.setPosition(device, position: Point3D(x: Double(100), y: Double(100), z: Double(0)), sender: nil)
+        }
     }}
     
     var currentZone: Zone?
@@ -34,6 +39,10 @@ class CatalogController: UIViewController, UICollectionViewDataSource, FlareCont
             // update selection
             dataChanged()
         }}
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -76,7 +85,7 @@ class CatalogController: UIViewController, UICollectionViewDataSource, FlareCont
         
         let convertedOffset = device.normalizedAngle / 360.0 * collectionView.contentSize.width
         
-        UIView.animateWithDuration(0.15, delay: 0, options: [.BeginFromCurrentState, .AllowUserInteraction, .CurveEaseOut], animations: {
+        UIView.animateWithDuration(0.3, delay: 0, options: [.BeginFromCurrentState, .AllowUserInteraction, .CurveEaseOut], animations: {
             self.collectionView.contentOffset = CGPointMake(convertedOffset, 0)
         }, completion: nil)
     }
