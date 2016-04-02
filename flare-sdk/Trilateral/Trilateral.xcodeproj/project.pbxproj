@@ -18,6 +18,7 @@
 		4287AF861CAFF51C00F4D46F /* YRCoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF851CAFF51C00F4D46F /* YRCoverFlowLayout.m */; };
 		4287AF8C1CB001D000F4D46F /* ScaleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF8B1CB001D000F4D46F /* ScaleAnimator.swift */; };
 		4287AF8E1CB0069F00F4D46F /* CatalogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF8D1CB0069F00F4D46F /* CatalogDetailViewController.swift */; };
+		4287AF901CB0136300F4D46F /* UIViewController+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF8F1CB0136300F4D46F /* UIViewController+Debug.swift */; };
 		C94290E71C1B83A400FFAA84 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94290E61C1B83A400FFAA84 /* ColorButton.swift */; };
 		C95CEBF91C1209B100C3A226 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBF81C1209B100C3A226 /* CompassView.swift */; };
 		C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBFA1C163A1700C3A226 /* DeviceController.swift */; };
@@ -115,6 +116,7 @@
 		4287AF8A1CAFF55B00F4D46F /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		4287AF8B1CB001D000F4D46F /* ScaleAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleAnimator.swift; sourceTree = "<group>"; };
 		4287AF8D1CB0069F00F4D46F /* CatalogDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogDetailViewController.swift; sourceTree = "<group>"; };
+		4287AF8F1CB0136300F4D46F /* UIViewController+Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Debug.swift"; sourceTree = "<group>"; };
 		C94290E61C1B83A400FFAA84 /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		C95CEBF81C1209B100C3A226 /* CompassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		C95CEBFA1C163A1700C3A226 /* DeviceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				4287AF7D1CAFE3E800F4D46F /* UIColor+Extensions.swift */,
+				4287AF8F1CB0136300F4D46F /* UIViewController+Debug.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				C9D1AA7A1AC4575D0003B8A1 /* IndoorMap.swift in Sources */,
 				C95CEBF91C1209B100C3A226 /* CompassView.swift in Sources */,
 				4287AF701CAF456400F4D46F /* TabBarController.swift in Sources */,
+				4287AF901CB0136300F4D46F /* UIViewController+Debug.swift in Sources */,
 				4287AF7E1CAFE3E800F4D46F /* UIColor+Extensions.swift in Sources */,
 				4287AF721CAFC1F300F4D46F /* CatalogCell.swift in Sources */,
 				C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */,

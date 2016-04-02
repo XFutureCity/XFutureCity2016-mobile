@@ -15,4 +15,8 @@ class TabBarController : UITabBarController {
         self.selectedIndex = 4
         self.tabBar.hidden = true
     }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
 }

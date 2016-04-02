@@ -27,17 +27,15 @@ class CatalogController: UIViewController, UICollectionViewDataSource, UICollect
     var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     let thingCellIdentifier = "Cell"
     var thingsSortedByAngle = [Thing]()
-    var currentPage = 0
+    var currentPage: Int?
     let scaleAnimator = ScaleAnimator()
     
     var currentEnvironment: Environment? { didSet(value) {
-        self.collectionView.reloadData()
-        self.updateBackground()
-        
         // Set current position (for demo)
         if let device = device {
             appDelegate.flareManager.setPosition(device, position: Point3D(x: Double(100), y: Double(100), z: Double(0)), sender: nil)
         }
+        dataChanged()
     }}
     
     var currentZone: Zone?
@@ -48,12 +46,13 @@ class CatalogController: UIViewController, UICollectionViewDataSource, UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        appDelegate.flareController = self
+        appDelegate.updateFlareController()
+        self.collectionView.reloadData()
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        appDelegate.flareController = self
-        appDelegate.updateFlareController()
         self.setupCollectionViewLayout()
         dataChanged()
     }
@@ -66,6 +65,7 @@ class CatalogController: UIViewController, UICollectionViewDataSource, UICollect
             device.angleTo($0) < device.angleTo($1)
         }
         collectionView.reloadData()
+        self.updateBackground()
     }
     
     func animate() {
@@ -77,17 +77,8 @@ class CatalogController: UIViewController, UICollectionViewDataSource, UICollect
         self.addDebugModeRecognizer()
     }
     
-    func addDebugModeRecognizer() {
-        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CompassViewController.toggleDebug))
-        gestureRecognizer.numberOfTapsRequired = 3
-        self.view.addGestureRecognizer(gestureRecognizer)
-    }
-    
-    func toggleDebug() {
-        guard let tabBar = self.tabBarController?.tabBar else {
-            return
-        }
-        tabBar.hidden = !tabBar.hidden
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
     
     // CollectionViewDataSource
@@ -116,13 +107,13 @@ class CatalogController: UIViewController, UICollectionViewDataSource, UICollect
     // Collection View Layout
     
     private var itemSize: CGSize {
-        return CGSize(width: 300, height: 120)
+        return CGSize(width: 320, height: 120)
     }
     
     func setupCollectionViewLayout() {
         let layout = YRCoverFlowLayout()
         layout.maxCoverDegree = 0.0
-        layout.coverDensity = 0.0
+        layout.coverDensity = -0.05
         layout.minCoverOpacity = 0.8
         layout.minCoverScale = 1.0
         layout.scrollDirection = .Horizontal

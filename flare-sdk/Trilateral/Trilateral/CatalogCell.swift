@@ -54,32 +54,10 @@ class CatalogCell : UICollectionViewCell {
     
     func update(thing: Thing, device: Device) {
         nameLabel.text = thing.name
-        if let imageName = thing.image {
-//            imageView.image = UIImage(named: imageName)
-        } else {
-//            imageView.image = nil
-        }
         cardContainer.backgroundColor = thing.uiColor
         nameLabel.textColor = thing.uiColor == UIColor.whiteColor() ? .blackColor() : .whiteColor()
         
         let rads = degreesToRadians(device.angleTo(thing)) - degreesToRadians(device.angle())
         compass.transform = CGAffineTransformMakeRotation(CGFloat(rads));
-        NSLog("\(rads)")
-        
-//        commentLabel.text = thing?.comment
-//        
-//        if let price = thing?.data["price"] as? Int {
-//            priceLabel.text = "$\(price)"
-//        }
-//        
-//        if let imageName = thing?.imageName() {
-//            thingImage.image = UIImage(named: imageName)
-//        }
-//        
-//        if let distance = device?.distanceTo(thing!) {
-//            distanceLabel.text = String(format: "%.1fm", distance)
-//        } else {
-//            distanceLabel.text = ""
-//        }
     }
 }
