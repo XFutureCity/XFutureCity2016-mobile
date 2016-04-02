@@ -15,6 +15,7 @@
 		4287AF7E1CAFE3E800F4D46F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF7D1CAFE3E800F4D46F /* UIColor+Extensions.swift */; };
 		4287AF801CAFE4F300F4D46F /* opera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF7F1CAFE4F300F4D46F /* opera.jpg */; };
 		4287AF821CAFF14800F4D46F /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF811CAFF14800F4D46F /* compass.png */; };
+		4287AF861CAFF51C00F4D46F /* YRCoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF851CAFF51C00F4D46F /* YRCoverFlowLayout.m */; };
 		C94290E71C1B83A400FFAA84 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94290E61C1B83A400FFAA84 /* ColorButton.swift */; };
 		C95CEBF91C1209B100C3A226 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBF81C1209B100C3A226 /* CompassView.swift */; };
 		C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBFA1C163A1700C3A226 /* DeviceController.swift */; };
@@ -107,6 +108,9 @@
 		4287AF7D1CAFE3E800F4D46F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		4287AF7F1CAFE4F300F4D46F /* opera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = opera.jpg; sourceTree = "<group>"; };
 		4287AF811CAFF14800F4D46F /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass.png; sourceTree = "<group>"; };
+		4287AF841CAFF51C00F4D46F /* YRCoverFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRCoverFlowLayout.h; sourceTree = "<group>"; };
+		4287AF851CAFF51C00F4D46F /* YRCoverFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRCoverFlowLayout.m; sourceTree = "<group>"; };
+		4287AF8A1CAFF55B00F4D46F /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		C94290E61C1B83A400FFAA84 /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		C95CEBF81C1209B100C3A226 /* CompassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		C95CEBFA1C163A1700C3A226 /* DeviceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
@@ -202,6 +206,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4287AF831CAFF51C00F4D46F /* YRCoverFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				4287AF841CAFF51C00F4D46F /* YRCoverFlowLayout.h */,
+				4287AF851CAFF51C00F4D46F /* YRCoverFlowLayout.m */,
+			);
+			path = YRCoverFlowLayout;
+			sourceTree = "<group>";
+		};
 		C95E8F541C5C115F00C30E8E /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +304,7 @@
 		C9D1AA3F1AC1F5850003B8A1 /* Trilateral */ = {
 			isa = PBXGroup;
 			children = (
+				4287AF831CAFF51C00F4D46F /* YRCoverFlowLayout */,
 				4287AF7C1CAFE3DA00F4D46F /* Extensions */,
 				4287AF751CAFDAE900F4D46F /* Rersouces */,
 				C9D1AA421AC1F5850003B8A1 /* AppDelegate.swift */,
@@ -303,6 +317,7 @@
 				C9C2DF131B98A334009E51AE /* Settings.bundle */,
 				C9D1AA661AC1FA190003B8A1 /* Frameworks */,
 				C9D1AA401AC1F5850003B8A1 /* Supporting Files */,
+				4287AF8A1CAFF55B00F4D46F /* BridgingHeader.h */,
 			);
 			path = Trilateral;
 			sourceTree = "<group>";
@@ -456,6 +471,7 @@
 				C95E8FA21C6129CB00C30E8E /* ThingCell.swift in Sources */,
 				C95E8FA01C6125AE00C30E8E /* CatalogController.swift in Sources */,
 				C9D3976B1C18D424006E6343 /* NearbyThingController.swift in Sources */,
+				4287AF861CAFF51C00F4D46F /* YRCoverFlowLayout.m in Sources */,
 				C94290E71C1B83A400FFAA84 /* ColorButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,6 +594,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.xebia.xfuturecity.projecta-bis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "043f204c-7f09-463b-9bd5-f8cbd48315c3";
+				SWIFT_OBJC_BRIDGING_HEADER = Trilateral/BridgingHeader.h;
 			};
 			name = Debug;
 		};
@@ -597,6 +614,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.xebia.xfuturecity.projecta-bis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "043f204c-7f09-463b-9bd5-f8cbd48315c3";
+				SWIFT_OBJC_BRIDGING_HEADER = Trilateral/BridgingHeader.h;
 			};
 			name = Release;
 		};

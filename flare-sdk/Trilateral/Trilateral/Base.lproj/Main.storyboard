@@ -410,10 +410,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QOX-Nf-iFA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPL-py-glg">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gdw-YS-wH9">
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pDh-Ve-rKs">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QOX-Nf-iFA">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Gdw-YS-wH9">
                                     <size key="itemSize" width="320" height="350"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -427,9 +433,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YOQ-D0-FRl">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
-                                                </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ue-VM-C9A">
                                                     <rect key="frame" x="8" y="222" width="304" height="120"/>
                                                     <subviews>
@@ -465,19 +468,15 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="YOQ-D0-FRl" firstAttribute="top" secondItem="bjM-oh-Lzc" secondAttribute="top" id="6zj-uC-fZa"/>
                                             <constraint firstItem="u1u-Hk-rhE" firstAttribute="trailing" secondItem="bjM-oh-Lzc" secondAttribute="trailingMargin" id="E2s-jV-jjr"/>
-                                            <constraint firstAttribute="bottom" secondItem="YOQ-D0-FRl" secondAttribute="bottom" id="LZe-zC-ehl"/>
                                             <constraint firstItem="3Ue-VM-C9A" firstAttribute="trailing" secondItem="bjM-oh-Lzc" secondAttribute="trailingMargin" id="N23-qu-PS7"/>
                                             <constraint firstItem="3Ue-VM-C9A" firstAttribute="top" secondItem="u1u-Hk-rhE" secondAttribute="bottom" constant="6" id="YAV-Ia-NkC"/>
-                                            <constraint firstItem="YOQ-D0-FRl" firstAttribute="leading" secondItem="bjM-oh-Lzc" secondAttribute="leading" id="YuJ-kv-ufX"/>
                                             <constraint firstItem="3Ue-VM-C9A" firstAttribute="leading" secondItem="bjM-oh-Lzc" secondAttribute="leadingMargin" id="emL-px-hgW"/>
-                                            <constraint firstAttribute="trailing" secondItem="YOQ-D0-FRl" secondAttribute="trailing" id="jnW-25-Bri"/>
                                             <constraint firstItem="3Ue-VM-C9A" firstAttribute="bottom" secondItem="bjM-oh-Lzc" secondAttribute="bottomMargin" id="jqv-tv-Wac"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="cardContainer" destination="3Ue-VM-C9A" id="Rht-WZ-yBD"/>
-                                            <outlet property="imageView" destination="YOQ-D0-FRl" id="9VM-78-dTS"/>
+                                            <outlet property="compass" destination="u1u-Hk-rhE" id="v2g-Fx-9br"/>
                                             <outlet property="nameLabel" destination="SFF-Gw-V0g" id="GKy-8w-xX3"/>
                                         </connections>
                                     </collectionViewCell>
@@ -490,14 +489,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pDh-Ve-rKs" secondAttribute="trailing" id="15K-va-uF6"/>
+                            <constraint firstAttribute="bottom" secondItem="pDh-Ve-rKs" secondAttribute="bottom" id="4J7-40-CbT"/>
+                            <constraint firstAttribute="bottom" secondItem="ZPL-py-glg" secondAttribute="bottom" id="ADs-q8-gEx"/>
                             <constraint firstItem="QOX-Nf-iFA" firstAttribute="top" secondItem="dcE-FI-TgD" secondAttribute="top" id="BJR-sP-2CA"/>
+                            <constraint firstItem="ZPL-py-glg" firstAttribute="leading" secondItem="dcE-FI-TgD" secondAttribute="leading" id="Ft1-H8-Knh"/>
                             <constraint firstAttribute="bottom" secondItem="QOX-Nf-iFA" secondAttribute="bottom" id="HVu-qQ-zak"/>
+                            <constraint firstItem="pDh-Ve-rKs" firstAttribute="top" secondItem="dcE-FI-TgD" secondAttribute="top" id="Rrd-zO-ooA"/>
                             <constraint firstItem="QOX-Nf-iFA" firstAttribute="leading" secondItem="dcE-FI-TgD" secondAttribute="leading" id="acm-sn-K8Q"/>
+                            <constraint firstAttribute="trailing" secondItem="ZPL-py-glg" secondAttribute="trailing" id="fUh-zz-eS7"/>
+                            <constraint firstItem="ZPL-py-glg" firstAttribute="top" secondItem="dcE-FI-TgD" secondAttribute="top" id="lNG-5c-CPb"/>
                             <constraint firstAttribute="trailing" secondItem="QOX-Nf-iFA" secondAttribute="trailing" id="rsE-cY-HFH"/>
+                            <constraint firstItem="pDh-Ve-rKs" firstAttribute="leading" secondItem="dcE-FI-TgD" secondAttribute="leading" id="uBO-eZ-GCr"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="eKH-og-Xqf"/>
                     <connections>
+                        <outlet property="backgroundImage1" destination="pDh-Ve-rKs" id="ENm-Sk-leU"/>
+                        <outlet property="backgroundImage2" destination="ZPL-py-glg" id="eLW-RS-3yL"/>
                         <outlet property="collectionView" destination="QOX-Nf-iFA" id="smT-bP-YlS"/>
                     </connections>
                 </viewController>

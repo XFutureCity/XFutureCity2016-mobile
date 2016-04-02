@@ -41,22 +41,31 @@ extension Thing {
     }
 }
 
+func degreesToRadians(angle: Double) -> Double {
+    return angle / 180.0 * M_PI
+}
+
 class CatalogCell : UICollectionViewCell {
     var device: Device?
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cardContainer: UIView!
+    @IBOutlet weak var compass: UIView!
     
-    func update(thing: Thing) {
+    func update(thing: Thing, device: Device) {
         nameLabel.text = thing.name
         if let imageName = thing.image {
-            NSLog("\(imageName)")
-            imageView.image = UIImage(named: imageName)
+//            imageView.image = UIImage(named: imageName)
         } else {
-            imageView.image = nil
+//            imageView.image = nil
         }
         cardContainer.backgroundColor = thing.uiColor
         nameLabel.textColor = thing.uiColor == UIColor.whiteColor() ? .blackColor() : .whiteColor()
+        
+        let rads = degreesToRadians(device.angleTo(thing)) - degreesToRadians(device.angle())
+        compass.transform = CGAffineTransformMakeRotation(CGFloat(rads));
+        NSLog("\(rads)")
+        
 //        commentLabel.text = thing?.comment
 //        
 //        if let price = thing?.data["price"] as? Int {
