@@ -27,6 +27,8 @@ class CatalogCell : UICollectionViewCell {
         cardContainer.backgroundColor = thing.uiColor
         nameLabel.textColor = thing.uiColor == UIColor.whiteColor() ? .blackColor() : .whiteColor()
         subnameLabel.textColor = nameLabel.textColor
+        cardContainer.layer.borderColor = UIColor.whiteColor().CGColor
+        cardContainer.layer.borderWidth = 1.0
         
 //        let rads = degreesToRadians(device.angleTo(thing)) - degreesToRadians(device.angle())
 //        compass.transform = CGAffineTransformMakeRotation(CGFloat(rads));

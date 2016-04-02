@@ -50,13 +50,13 @@ extension Thing {
         }
         switch color {
         case "green":
-            return UIColor(red:0.124,  green:0.687,  blue:0.615, alpha:1)
+            return UIColor(red:0.124,  green:0.687,  blue:0.615, alpha:0.95)
         case "brown":
-            return UIColor(red:0.421,  green:0.255,  blue:0.036, alpha:1)
+            return UIColor(red:0.421,  green:0.255,  blue:0.036, alpha:0.95)
         case "red":
-            return UIColor(red:0.421,  green:0.255,  blue:0.036, alpha:1)
+            return UIColor(red:0.620,  green:0.206,  blue:0.076, alpha:0.95)
         case "white":
-            return UIColor.whiteColor()
+            return UIColor(red:0.273,  green:0.558,  blue:0.897, alpha:0.95)
         default:
             return UIColor.clearColor()
         }
