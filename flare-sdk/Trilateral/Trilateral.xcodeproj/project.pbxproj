@@ -14,7 +14,6 @@
 		4287AF7B1CAFDAE900F4D46F /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF781CAFDAE900F4D46F /* RobotoCondensed-Bold.ttf */; };
 		4287AF7E1CAFE3E800F4D46F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF7D1CAFE3E800F4D46F /* UIColor+Extensions.swift */; };
 		4287AF801CAFE4F300F4D46F /* opera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF7F1CAFE4F300F4D46F /* opera.jpg */; };
-		4287AF821CAFF14800F4D46F /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF811CAFF14800F4D46F /* compass.png */; };
 		4287AF861CAFF51C00F4D46F /* YRCoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF851CAFF51C00F4D46F /* YRCoverFlowLayout.m */; };
 		4287AF8C1CB001D000F4D46F /* ScaleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF8B1CB001D000F4D46F /* ScaleAnimator.swift */; };
 		4287AF8E1CB0069F00F4D46F /* CatalogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF8D1CB0069F00F4D46F /* CatalogDetailViewController.swift */; };
@@ -32,6 +31,7 @@
 		4287AFA81CB047C500F4D46F /* Pharmacie-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFA71CB047C500F4D46F /* Pharmacie-Icon@2x.png */; };
 		4287AFAB1CB05ECE00F4D46F /* cafedelapaix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFA91CB05ECE00F4D46F /* cafedelapaix.jpg */; };
 		4287AFAC1CB05ECE00F4D46F /* pharmacy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFAA1CB05ECE00F4D46F /* pharmacy.jpg */; };
+		5C551FA41CB06CBA004DC860 /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C551FA31CB06CBA004DC860 /* compass.png */; };
 		C94290E71C1B83A400FFAA84 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94290E61C1B83A400FFAA84 /* ColorButton.swift */; };
 		C95CEBF91C1209B100C3A226 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBF81C1209B100C3A226 /* CompassView.swift */; };
 		C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBFA1C163A1700C3A226 /* DeviceController.swift */; };
@@ -123,7 +123,6 @@
 		4287AF781CAFDAE900F4D46F /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
 		4287AF7D1CAFE3E800F4D46F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		4287AF7F1CAFE4F300F4D46F /* opera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = opera.jpg; sourceTree = "<group>"; };
-		4287AF811CAFF14800F4D46F /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass.png; sourceTree = "<group>"; };
 		4287AF841CAFF51C00F4D46F /* YRCoverFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRCoverFlowLayout.h; sourceTree = "<group>"; };
 		4287AF851CAFF51C00F4D46F /* YRCoverFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRCoverFlowLayout.m; sourceTree = "<group>"; };
 		4287AF8A1CAFF55B00F4D46F /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
@@ -143,6 +142,7 @@
 		4287AFA71CB047C500F4D46F /* Pharmacie-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pharmacie-Icon@2x.png"; sourceTree = "<group>"; };
 		4287AFA91CB05ECE00F4D46F /* cafedelapaix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cafedelapaix.jpg; sourceTree = "<group>"; };
 		4287AFAA1CB05ECE00F4D46F /* pharmacy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pharmacy.jpg; sourceTree = "<group>"; };
+		5C551FA31CB06CBA004DC860 /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass.png; sourceTree = "<group>"; };
 		C94290E61C1B83A400FFAA84 /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		C95CEBF81C1209B100C3A226 /* CompassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		C95CEBFA1C163A1700C3A226 /* DeviceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
@@ -222,6 +222,7 @@
 			children = (
 				4287AFA91CB05ECE00F4D46F /* cafedelapaix.jpg */,
 				4287AFAA1CB05ECE00F4D46F /* pharmacy.jpg */,
+				5C551FA31CB06CBA004DC860 /* compass.png */,
 				4287AFA71CB047C500F4D46F /* Pharmacie-Icon@2x.png */,
 				4287AF9F1CB0417B00F4D46F /* Restaurant-Icon@2x.png */,
 				4287AFA01CB0417B00F4D46F /* Fullcircle - Icon@2x.png */,
@@ -231,7 +232,6 @@
 				4287AF991CB03E8F00F4D46F /* Subway-Icon.png */,
 				4287AF9A1CB03E8F00F4D46F /* Subway-Icon@2x.png */,
 				4287AF931CB015D400F4D46F /* vignette.png */,
-				4287AF811CAFF14800F4D46F /* compass.png */,
 				4287AF7F1CAFE4F300F4D46F /* opera.jpg */,
 				4287AF761CAFDAE900F4D46F /* entrance-1.jpg */,
 				4287AF771CAFDAE900F4D46F /* entrance-2.jpg */,
@@ -465,6 +465,7 @@
 				C95E8F881C5C115F00C30E8E /* erska-orange.png in Resources */,
 				4287AFA21CB0417B00F4D46F /* Restaurant-Icon@2x.png in Resources */,
 				4287AF7B1CAFDAE900F4D46F /* RobotoCondensed-Bold.ttf in Resources */,
+				5C551FA41CB06CBA004DC860 /* compass.png in Resources */,
 				C9D397671C18B3FD006E6343 /* Settings.bundle in Resources */,
 				C95E8F8D1C5C115F00C30E8E /* kallax-birch.png in Resources */,
 				4287AF941CB015D400F4D46F /* vignette.png in Resources */,
@@ -500,7 +501,6 @@
 				4287AF9D1CB03E8F00F4D46F /* Subway-Icon.png in Resources */,
 				C95E8F991C5C115F00C30E8E /* knislinge-red.png in Resources */,
 				C95E8F7D1C5C115F00C30E8E /* arholma-red.png in Resources */,
-				4287AF821CAFF14800F4D46F /* compass.png in Resources */,
 				C95E8F7F1C5C115F00C30E8E /* coombe-black.png in Resources */,
 				C95E8F931C5C115F00C30E8E /* karlstad-turquoise.png in Resources */,
 				4287AFA81CB047C500F4D46F /* Pharmacie-Icon@2x.png in Resources */,
