@@ -93,8 +93,9 @@ class CatalogController: UIViewController, UICollectionViewDataSource, UICollect
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(thingCellIdentifier, forIndexPath: indexPath) as! CatalogCell
-        cell.update(thingsSortedByAngle[indexPath.item], device: device!)
+        let thing = thingsSortedByAngle[indexPath.item]
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(thing.dataType.cellIdentifier, forIndexPath: indexPath) as! CatalogCell
+        cell.update(thing, device: device!)
         return cell
     }
     
@@ -107,7 +108,7 @@ class CatalogController: UIViewController, UICollectionViewDataSource, UICollect
     // Collection View Layout
     
     private var itemSize: CGSize {
-        return CGSize(width: 320, height: 120)
+        return CGSize(width: 320, height: 200)
     }
     
     func setupCollectionViewLayout() {
@@ -161,10 +162,10 @@ extension CatalogController: UIViewControllerTransitioningDelegate {
         guard let indexPaths = collectionView.indexPathsForSelectedItems() where indexPaths.count > 0 else {
             return nil
         }
-        guard let cell = collectionView.cellForItemAtIndexPath(indexPaths[0]) else {
+        guard let cell = collectionView.cellForItemAtIndexPath(indexPaths[0]) as? CatalogCell else {
             return nil
         }
-        self.scaleAnimator.originFrame = cell.superview!.convertRect(cell.frame, toView: nil)
+        self.scaleAnimator.originFrame = cell.convertRect(cell.cardContainer.frame, toView: nil)
         self.scaleAnimator.presenting = true
         
         return self.scaleAnimator

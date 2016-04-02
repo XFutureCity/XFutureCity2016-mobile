@@ -19,6 +19,16 @@
 		4287AF8C1CB001D000F4D46F /* ScaleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF8B1CB001D000F4D46F /* ScaleAnimator.swift */; };
 		4287AF8E1CB0069F00F4D46F /* CatalogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF8D1CB0069F00F4D46F /* CatalogDetailViewController.swift */; };
 		4287AF901CB0136300F4D46F /* UIViewController+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF8F1CB0136300F4D46F /* UIViewController+Debug.swift */; };
+		4287AF941CB015D400F4D46F /* vignette.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF931CB015D400F4D46F /* vignette.png */; };
+		4287AF961CB03E4E00F4D46F /* Thing+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF951CB03E4E00F4D46F /* Thing+Extensions.swift */; };
+		4287AF9B1CB03E8F00F4D46F /* Museum-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF971CB03E8F00F4D46F /* Museum-Icon.png */; };
+		4287AF9C1CB03E8F00F4D46F /* Museum-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF981CB03E8F00F4D46F /* Museum-Icon@2x.png */; };
+		4287AF9D1CB03E8F00F4D46F /* Subway-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF991CB03E8F00F4D46F /* Subway-Icon.png */; };
+		4287AF9E1CB03E8F00F4D46F /* Subway-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF9A1CB03E8F00F4D46F /* Subway-Icon@2x.png */; };
+		4287AFA21CB0417B00F4D46F /* Restaurant-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF9F1CB0417B00F4D46F /* Restaurant-Icon@2x.png */; };
+		4287AFA31CB0417B00F4D46F /* Fullcircle - Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFA01CB0417B00F4D46F /* Fullcircle - Icon@2x.png */; };
+		4287AFA41CB0417B00F4D46F /* EmptyCircle - Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFA11CB0417B00F4D46F /* EmptyCircle - Icon@2x.png */; };
+		4287AFA61CB0467A00F4D46F /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFA51CB0448100F4D46F /* RobotoCondensed-Light.ttf */; };
 		C94290E71C1B83A400FFAA84 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94290E61C1B83A400FFAA84 /* ColorButton.swift */; };
 		C95CEBF91C1209B100C3A226 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBF81C1209B100C3A226 /* CompassView.swift */; };
 		C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBFA1C163A1700C3A226 /* DeviceController.swift */; };
@@ -117,6 +127,16 @@
 		4287AF8B1CB001D000F4D46F /* ScaleAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleAnimator.swift; sourceTree = "<group>"; };
 		4287AF8D1CB0069F00F4D46F /* CatalogDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogDetailViewController.swift; sourceTree = "<group>"; };
 		4287AF8F1CB0136300F4D46F /* UIViewController+Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Debug.swift"; sourceTree = "<group>"; };
+		4287AF931CB015D400F4D46F /* vignette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vignette.png; sourceTree = "<group>"; };
+		4287AF951CB03E4E00F4D46F /* Thing+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Thing+Extensions.swift"; sourceTree = "<group>"; };
+		4287AF971CB03E8F00F4D46F /* Museum-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Museum-Icon.png"; sourceTree = "<group>"; };
+		4287AF981CB03E8F00F4D46F /* Museum-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Museum-Icon@2x.png"; sourceTree = "<group>"; };
+		4287AF991CB03E8F00F4D46F /* Subway-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Subway-Icon.png"; sourceTree = "<group>"; };
+		4287AF9A1CB03E8F00F4D46F /* Subway-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Subway-Icon@2x.png"; sourceTree = "<group>"; };
+		4287AF9F1CB0417B00F4D46F /* Restaurant-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Restaurant-Icon@2x.png"; sourceTree = "<group>"; };
+		4287AFA01CB0417B00F4D46F /* Fullcircle - Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fullcircle - Icon@2x.png"; sourceTree = "<group>"; };
+		4287AFA11CB0417B00F4D46F /* EmptyCircle - Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EmptyCircle - Icon@2x.png"; sourceTree = "<group>"; };
+		4287AFA51CB0448100F4D46F /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
 		C94290E61C1B83A400FFAA84 /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		C95CEBF81C1209B100C3A226 /* CompassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		C95CEBFA1C163A1700C3A226 /* DeviceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
@@ -194,10 +214,19 @@
 		4287AF751CAFDAE900F4D46F /* Rersouces */ = {
 			isa = PBXGroup;
 			children = (
+				4287AF9F1CB0417B00F4D46F /* Restaurant-Icon@2x.png */,
+				4287AFA01CB0417B00F4D46F /* Fullcircle - Icon@2x.png */,
+				4287AFA11CB0417B00F4D46F /* EmptyCircle - Icon@2x.png */,
+				4287AF971CB03E8F00F4D46F /* Museum-Icon.png */,
+				4287AF981CB03E8F00F4D46F /* Museum-Icon@2x.png */,
+				4287AF991CB03E8F00F4D46F /* Subway-Icon.png */,
+				4287AF9A1CB03E8F00F4D46F /* Subway-Icon@2x.png */,
+				4287AF931CB015D400F4D46F /* vignette.png */,
 				4287AF811CAFF14800F4D46F /* compass.png */,
 				4287AF7F1CAFE4F300F4D46F /* opera.jpg */,
 				4287AF761CAFDAE900F4D46F /* entrance-1.jpg */,
 				4287AF771CAFDAE900F4D46F /* entrance-2.jpg */,
+				4287AFA51CB0448100F4D46F /* RobotoCondensed-Light.ttf */,
 				4287AF781CAFDAE900F4D46F /* RobotoCondensed-Bold.ttf */,
 			);
 			name = Rersouces;
@@ -209,6 +238,7 @@
 			children = (
 				4287AF7D1CAFE3E800F4D46F /* UIColor+Extensions.swift */,
 				4287AF8F1CB0136300F4D46F /* UIViewController+Debug.swift */,
+				4287AF951CB03E4E00F4D46F /* Thing+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -417,20 +447,27 @@
 				C95E8F921C5C115F00C30E8E /* karlstad-orange.png in Resources */,
 				C95E8F7C1C5C115F00C30E8E /* arholma-orange.png in Resources */,
 				C95E8F9B1C5C115F00C30E8E /* knopparp-blue.png in Resources */,
+				4287AFA41CB0417B00F4D46F /* EmptyCircle - Icon@2x.png in Resources */,
 				C95E8F981C5C115F00C30E8E /* knislinge-green.png in Resources */,
 				C95E8F9D1C5C115F00C30E8E /* knopparp-pink.png in Resources */,
 				C95E8F851C5C115F00C30E8E /* dagarn-lightblue.png in Resources */,
 				C95E8F951C5C115F00C30E8E /* karlstad-yellow.png in Resources */,
 				C95E8F881C5C115F00C30E8E /* erska-orange.png in Resources */,
+				4287AFA21CB0417B00F4D46F /* Restaurant-Icon@2x.png in Resources */,
 				4287AF7B1CAFDAE900F4D46F /* RobotoCondensed-Bold.ttf in Resources */,
 				C9D397671C18B3FD006E6343 /* Settings.bundle in Resources */,
 				C95E8F8D1C5C115F00C30E8E /* kallax-birch.png in Resources */,
+				4287AF941CB015D400F4D46F /* vignette.png in Resources */,
+				4287AF9C1CB03E8F00F4D46F /* Museum-Icon@2x.png in Resources */,
 				C9D1AA481AC1F5850003B8A1 /* Main.storyboard in Resources */,
+				4287AF9E1CB03E8F00F4D46F /* Subway-Icon@2x.png in Resources */,
+				4287AFA61CB0467A00F4D46F /* RobotoCondensed-Light.ttf in Resources */,
 				C95E8F9E1C5C115F00C30E8E /* knopparp-yellow.png in Resources */,
 				C95E8F9A1C5C115F00C30E8E /* knislinge-teal.png in Resources */,
 				C95E8F8C1C5C115F00C30E8E /* erska-teal.png in Resources */,
 				C9D1AA4D1AC1F5850003B8A1 /* LaunchScreen.xib in Resources */,
 				C95E8F831C5C115F00C30E8E /* coombe-yellow.png in Resources */,
+				4287AF9B1CB03E8F00F4D46F /* Museum-Icon.png in Resources */,
 				C95E8F811C5C115F00C30E8E /* coombe-lightgray.png in Resources */,
 				C95E8F801C5C115F00C30E8E /* coombe-gray.png in Resources */,
 				C95E8F9C1C5C115F00C30E8E /* knopparp-green.png in Resources */,
@@ -442,12 +479,14 @@
 				C95E8F7E1C5C115F00C30E8E /* arholma-white.png in Resources */,
 				C95E8F941C5C115F00C30E8E /* karlstad-white.png in Resources */,
 				C95E8F861C5C115F00C30E8E /* dagarn-purple.png in Resources */,
+				4287AFA31CB0417B00F4D46F /* Fullcircle - Icon@2x.png in Resources */,
 				4287AF7A1CAFDAE900F4D46F /* entrance-2.jpg in Resources */,
 				C95E8F871C5C115F00C30E8E /* dagarn-red.png in Resources */,
 				C95E8F961C5C115F00C30E8E /* knislinge-black.png in Resources */,
 				C95E8F7B1C5C115F00C30E8E /* arholma-green.png in Resources */,
 				C95E8F971C5C115F00C30E8E /* knislinge-gray.png in Resources */,
 				C95E8F8A1C5C115F00C30E8E /* erska-red.png in Resources */,
+				4287AF9D1CB03E8F00F4D46F /* Subway-Icon.png in Resources */,
 				C95E8F991C5C115F00C30E8E /* knislinge-red.png in Resources */,
 				C95E8F7D1C5C115F00C30E8E /* arholma-red.png in Resources */,
 				4287AF821CAFF14800F4D46F /* compass.png in Resources */,
@@ -476,6 +515,7 @@
 				4287AF721CAFC1F300F4D46F /* CatalogCell.swift in Sources */,
 				C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */,
 				C9D397691C18CEB8006E6343 /* CompassViewController.swift in Sources */,
+				4287AF961CB03E4E00F4D46F /* Thing+Extensions.swift in Sources */,
 				C9D1AA451AC1F5850003B8A1 /* MapViewController.swift in Sources */,
 				C9D1AA431AC1F5850003B8A1 /* AppDelegate.swift in Sources */,
 				C95E8FA21C6129CB00C30E8E /* ThingCell.swift in Sources */,
