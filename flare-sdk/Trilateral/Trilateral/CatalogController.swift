@@ -100,9 +100,10 @@ class CatalogController: UIViewController, UICollectionViewDataSource, UICollect
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let cardDetailViewController = storyboard!.instantiateViewControllerWithIdentifier("CardDetailViewController")
-        cardDetailViewController.transitioningDelegate = self
-        self.presentViewController(cardDetailViewController, animated: true, completion: nil)
+        let detailViewController = storyboard!.instantiateViewControllerWithIdentifier("CardDetailViewController") as! CatalogDetailViewController
+        detailViewController.thing = thingsSortedByAngle[indexPath.item]
+        detailViewController.transitioningDelegate = self
+        self.presentViewController(detailViewController, animated: true, completion: nil)
     }
     
     // Collection View Layout
