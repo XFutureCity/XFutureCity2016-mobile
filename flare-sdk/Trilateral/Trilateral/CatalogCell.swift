@@ -17,6 +17,7 @@ func degreesToRadians(angle: Double) -> Double {
 class CatalogCell : UICollectionViewCell {
     var device: Device?
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var subnameLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cardContainer: UIView!
     @IBOutlet weak var compass: UIView!
@@ -25,6 +26,7 @@ class CatalogCell : UICollectionViewCell {
         nameLabel.text = thing.name
         cardContainer.backgroundColor = thing.uiColor
         nameLabel.textColor = thing.uiColor == UIColor.whiteColor() ? .blackColor() : .whiteColor()
+        subnameLabel.textColor = nameLabel.textColor
         
 //        let rads = degreesToRadians(device.angleTo(thing)) - degreesToRadians(device.angle())
 //        compass.transform = CGAffineTransformMakeRotation(CGFloat(rads));

@@ -620,6 +620,7 @@
                                         <connections>
                                             <outlet property="cardContainer" destination="hQ4-sK-rnK" id="lcj-hj-U6i"/>
                                             <outlet property="nameLabel" destination="5zQ-ME-IEA" id="GBO-wg-Qhk"/>
+                                            <outlet property="subnameLabel" destination="tDe-Z4-DLe" id="70u-4x-fD1"/>
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellSee" id="gIY-hG-ljn" customClass="CatalogCell" customModule="XFCA" customModuleProvider="target">
@@ -693,7 +694,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                             </subviews>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <accessibility key="accessibilityConfiguration" label="Excellent">
                                                                 <bool key="isElement" value="YES"/>
                                                             </accessibility>
@@ -744,6 +745,7 @@
                                         <connections>
                                             <outlet property="cardContainer" destination="q3K-Ou-AC2" id="Zzx-e5-lct"/>
                                             <outlet property="nameLabel" destination="7qZ-Ms-re4" id="uBL-ys-UkK"/>
+                                            <outlet property="subnameLabel" destination="mzO-CG-jQm" id="7y0-Hb-pze"/>
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellEat" id="tR5-K4-6TR" customClass="CatalogCell" customModule="XFCA" customModuleProvider="target">
@@ -835,7 +837,7 @@
                                                             </constraints>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <accessibility key="accessibilityConfiguration" label="Good">
                                                         <bool key="isElement" value="YES"/>
                                                     </accessibility>
@@ -868,6 +870,7 @@
                                         <connections>
                                             <outlet property="cardContainer" destination="JR3-xS-EwL" id="1DD-O6-EhI"/>
                                             <outlet property="nameLabel" destination="Qa7-20-gab" id="nRs-sq-U3m"/>
+                                            <outlet property="subnameLabel" destination="ME6-JK-Nxf" id="2fe-vo-t4y"/>
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellBuy" id="YLG-lP-BQo" customClass="CatalogCell" customModule="XFCA" customModuleProvider="target">
@@ -937,7 +940,7 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Subway-Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="UX8-sz-cFb">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pharmacie-Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="UX8-sz-cFb">
                                                             <rect key="frame" x="276" y="8" width="46" height="46"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="46" id="Eoe-Ln-P9c"/>
@@ -986,6 +989,7 @@
                                         <connections>
                                             <outlet property="cardContainer" destination="RQo-i8-6aZ" id="5x5-tj-Cqi"/>
                                             <outlet property="nameLabel" destination="Kbf-rL-uD1" id="zIp-ps-sP3"/>
+                                            <outlet property="subnameLabel" destination="bjD-He-C2O" id="45y-QC-sZ6"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -1203,6 +1207,7 @@
         <image name="Logo" width="225" height="225"/>
         <image name="Map" width="25" height="25"/>
         <image name="Museum-Icon.png" width="46" height="46"/>
+        <image name="Pharmacie-Icon.png" width="46" height="46"/>
         <image name="Restaurant-Icon.png" width="46" height="46"/>
         <image name="Subway-Icon.png" width="46" height="46"/>
         <image name="Thing" width="25" height="25"/>
