@@ -30,6 +30,8 @@
 		4287AFA41CB0417B00F4D46F /* EmptyCircle - Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFA11CB0417B00F4D46F /* EmptyCircle - Icon@2x.png */; };
 		4287AFA61CB0467A00F4D46F /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFA51CB0448100F4D46F /* RobotoCondensed-Light.ttf */; };
 		4287AFA81CB047C500F4D46F /* Pharmacie-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFA71CB047C500F4D46F /* Pharmacie-Icon@2x.png */; };
+		4287AFAB1CB05ECE00F4D46F /* cafedelapaix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFA91CB05ECE00F4D46F /* cafedelapaix.jpg */; };
+		4287AFAC1CB05ECE00F4D46F /* pharmacy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFAA1CB05ECE00F4D46F /* pharmacy.jpg */; };
 		C94290E71C1B83A400FFAA84 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94290E61C1B83A400FFAA84 /* ColorButton.swift */; };
 		C95CEBF91C1209B100C3A226 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBF81C1209B100C3A226 /* CompassView.swift */; };
 		C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBFA1C163A1700C3A226 /* DeviceController.swift */; };
@@ -139,6 +141,8 @@
 		4287AFA11CB0417B00F4D46F /* EmptyCircle - Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EmptyCircle - Icon@2x.png"; sourceTree = "<group>"; };
 		4287AFA51CB0448100F4D46F /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
 		4287AFA71CB047C500F4D46F /* Pharmacie-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pharmacie-Icon@2x.png"; sourceTree = "<group>"; };
+		4287AFA91CB05ECE00F4D46F /* cafedelapaix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cafedelapaix.jpg; sourceTree = "<group>"; };
+		4287AFAA1CB05ECE00F4D46F /* pharmacy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pharmacy.jpg; sourceTree = "<group>"; };
 		C94290E61C1B83A400FFAA84 /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		C95CEBF81C1209B100C3A226 /* CompassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		C95CEBFA1C163A1700C3A226 /* DeviceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
@@ -216,6 +220,8 @@
 		4287AF751CAFDAE900F4D46F /* Rersouces */ = {
 			isa = PBXGroup;
 			children = (
+				4287AFA91CB05ECE00F4D46F /* cafedelapaix.jpg */,
+				4287AFAA1CB05ECE00F4D46F /* pharmacy.jpg */,
 				4287AFA71CB047C500F4D46F /* Pharmacie-Icon@2x.png */,
 				4287AF9F1CB0417B00F4D46F /* Restaurant-Icon@2x.png */,
 				4287AFA01CB0417B00F4D46F /* Fullcircle - Icon@2x.png */,
@@ -445,6 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4287AFAC1CB05ECE00F4D46F /* pharmacy.jpg in Resources */,
 				C95E8F901C5C115F00C30E8E /* kallax-white.png in Resources */,
 				C95E8F8B1C5C115F00C30E8E /* erska-salmon.png in Resources */,
 				C95E8F921C5C115F00C30E8E /* karlstad-orange.png in Resources */,
@@ -488,6 +495,7 @@
 				C95E8F961C5C115F00C30E8E /* knislinge-black.png in Resources */,
 				C95E8F7B1C5C115F00C30E8E /* arholma-green.png in Resources */,
 				C95E8F971C5C115F00C30E8E /* knislinge-gray.png in Resources */,
+				4287AFAB1CB05ECE00F4D46F /* cafedelapaix.jpg in Resources */,
 				C95E8F8A1C5C115F00C30E8E /* erska-red.png in Resources */,
 				4287AF9D1CB03E8F00F4D46F /* Subway-Icon.png in Resources */,
 				C95E8F991C5C115F00C30E8E /* knislinge-red.png in Resources */,
