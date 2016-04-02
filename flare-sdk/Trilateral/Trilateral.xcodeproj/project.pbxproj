@@ -646,7 +646,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Simone Civetta (NXCPWM8SF4)";
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"../Flare/Output/Release-iphoneos",
@@ -657,7 +657,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.xebia.xfuturecity.projecta-bis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "043f204c-7f09-463b-9bd5-f8cbd48315c3";
+				PROVISIONING_PROFILE = "dd922e83-ceb9-4079-b812-8722c5315d55";
 				SWIFT_OBJC_BRIDGING_HEADER = Trilateral/BridgingHeader.h;
 			};
 			name = Debug;
@@ -666,7 +666,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Simone Civetta (NXCPWM8SF4)";
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"../Flare/Output/Release-iphoneos",
@@ -677,7 +677,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.xebia.xfuturecity.projecta-bis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "043f204c-7f09-463b-9bd5-f8cbd48315c3";
+				PROVISIONING_PROFILE = "dd922e83-ceb9-4079-b812-8722c5315d55";
 				SWIFT_OBJC_BRIDGING_HEADER = Trilateral/BridgingHeader.h;
 			};
 			name = Release;

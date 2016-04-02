@@ -30,7 +30,7 @@ class CatalogCell : UICollectionViewCell {
         cardContainer.layer.borderColor = UIColor.whiteColor().CGColor
         cardContainer.layer.borderWidth = 1.0
         
-//        let rads = degreesToRadians(device.angleTo(thing)) - degreesToRadians(device.angle())
-//        compass.transform = CGAffineTransformMakeRotation(CGFloat(rads));
+        let rads = degreesToRadians(device.angleTo(thing)) - degreesToRadians(device.angle())
+        compass.transform = CGAffineTransformMakeRotation(CGFloat(rads));
     }
 }

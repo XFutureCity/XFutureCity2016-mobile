@@ -109,7 +109,7 @@ class CatalogController: UIViewController, UICollectionViewDataSource, UICollect
     // Collection View Layout
     
     private var itemSize: CGSize {
-        return CGSize(width: 320, height: 200)
+        return CGSize(width: 320, height: 700)
     }
     
     func setupCollectionViewLayout() {
