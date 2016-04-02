@@ -21,6 +21,24 @@ class CompassViewController: UIViewController {
         appDelegate.updateFlareController()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.addDebugModeRecognizer()
+    }
+    
+    func addDebugModeRecognizer() {
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CompassViewController.toggleDebug))
+        gestureRecognizer.numberOfTapsRequired = 3
+        self.view.addGestureRecognizer(gestureRecognizer)
+    }
+    
+    func toggleDebug() {
+        guard let tabBar = self.tabBarController?.tabBar else {
+            return
+        }
+        tabBar.hidden = !tabBar.hidden
+    }
+    
     override func viewDidDisappear(animated: Bool) {
         
     }

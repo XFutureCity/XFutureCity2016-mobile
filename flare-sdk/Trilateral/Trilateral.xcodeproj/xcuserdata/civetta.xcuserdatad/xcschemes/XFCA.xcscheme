@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C9D1AA3C1AC1F5850003B8A1"
-               BuildableName = "Trilateral.app"
-               BlueprintName = "Trilateral"
+               BuildableName = "XFCA.app"
+               BlueprintName = "XFCA"
                ReferencedContainer = "container:Trilateral.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C9D1AA3C1AC1F5850003B8A1"
-            BuildableName = "Trilateral.app"
-            BlueprintName = "Trilateral"
+            BuildableName = "XFCA.app"
+            BlueprintName = "XFCA"
             ReferencedContainer = "container:Trilateral.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C9D1AA3C1AC1F5850003B8A1"
-            BuildableName = "Trilateral.app"
-            BlueprintName = "Trilateral"
+            BuildableName = "XFCA.app"
+            BlueprintName = "XFCA"
             ReferencedContainer = "container:Trilateral.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C9D1AA3C1AC1F5850003B8A1"
-            BuildableName = "Trilateral.app"
-            BlueprintName = "Trilateral"
+            BuildableName = "XFCA.app"
+            BlueprintName = "XFCA"
             ReferencedContainer = "container:Trilateral.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

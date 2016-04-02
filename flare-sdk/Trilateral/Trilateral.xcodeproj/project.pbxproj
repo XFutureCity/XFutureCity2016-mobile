@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4287AF701CAF456400F4D46F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF6F1CAF456400F4D46F /* TabBarController.swift */; };
 		C94290E71C1B83A400FFAA84 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94290E61C1B83A400FFAA84 /* ColorButton.swift */; };
 		C95CEBF91C1209B100C3A226 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBF81C1209B100C3A226 /* CompassView.swift */; };
 		C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBFA1C163A1700C3A226 /* DeviceController.swift */; };
@@ -91,6 +92,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4287AF6F1CAF456400F4D46F /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		C94290E61C1B83A400FFAA84 /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		C95CEBF81C1209B100C3A226 /* CompassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		C95CEBFA1C163A1700C3A226 /* DeviceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		C9887ECE1C18EEDB008FBD21 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4287AF6F1CAF456400F4D46F /* TabBarController.swift */,
 				C95CEBFA1C163A1700C3A226 /* DeviceController.swift */,
 				C9D1AA441AC1F5850003B8A1 /* MapViewController.swift */,
 				C9D397681C18CEB8006E6343 /* CompassViewController.swift */,
@@ -288,9 +291,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C9D1AA3C1AC1F5850003B8A1 /* Trilateral */ = {
+		C9D1AA3C1AC1F5850003B8A1 /* XFCA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9D1AA5C1AC1F5860003B8A1 /* Build configuration list for PBXNativeTarget "Trilateral" */;
+			buildConfigurationList = C9D1AA5C1AC1F5860003B8A1 /* Build configuration list for PBXNativeTarget "XFCA" */;
 			buildPhases = (
 				C9D1AA391AC1F5850003B8A1 /* Sources */,
 				C9D1AA3A1AC1F5850003B8A1 /* Frameworks */,
@@ -302,7 +305,7 @@
 			);
 			dependencies = (
 			);
-			name = Trilateral;
+			name = XFCA;
 			productName = Trilateral;
 			productReference = C9D1AA3D1AC1F5850003B8A1 /* Trilateral.app */;
 			productType = "com.apple.product-type.application";
@@ -337,7 +340,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C9D1AA3C1AC1F5850003B8A1 /* Trilateral */,
+				C9D1AA3C1AC1F5850003B8A1 /* XFCA */,
 			);
 		};
 /* End PBXProject section */
@@ -400,6 +403,7 @@
 			files = (
 				C9D1AA7A1AC4575D0003B8A1 /* IndoorMap.swift in Sources */,
 				C95CEBF91C1209B100C3A226 /* CompassView.swift in Sources */,
+				4287AF701CAF456400F4D46F /* TabBarController.swift in Sources */,
 				C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */,
 				C9D397691C18CEB8006E6343 /* CompassViewController.swift in Sources */,
 				C9D1AA451AC1F5850003B8A1 /* MapViewController.swift in Sources */,
@@ -526,7 +530,7 @@
 				INFOPLIST_FILE = Trilateral/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.xebia.xfuturecity.trilateral;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.xebia.xfuturecity.projecta-bis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "043f204c-7f09-463b-9bd5-f8cbd48315c3";
 			};
@@ -545,7 +549,7 @@
 				INFOPLIST_FILE = Trilateral/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.xebia.xfuturecity.trilateral;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.xebia.xfuturecity.projecta-bis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "043f204c-7f09-463b-9bd5-f8cbd48315c3";
 			};
@@ -563,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9D1AA5C1AC1F5860003B8A1 /* Build configuration list for PBXNativeTarget "Trilateral" */ = {
+		C9D1AA5C1AC1F5860003B8A1 /* Build configuration list for PBXNativeTarget "XFCA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9D1AA5D1AC1F5860003B8A1 /* Debug */,

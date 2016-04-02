@@ -16,7 +16,7 @@
 			<key>AutocorrectionType</key>
 			<string>No</string>
 			<key>DefaultValue</key>
-			<string>localhost</string>
+			<string>ec2-52-16-224-123.eu-west-1.compute.amazonaws.com</string>
 			<key>Key</key>
 			<string>host</string>
 			<key>KeyboardType</key>
@@ -30,7 +30,7 @@
 			<key>KeyboardType</key>
 			<string>NumberPad</string>
 			<key>DefaultValue</key>
-			<string>1234</string>
+			<string>8080</string>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>

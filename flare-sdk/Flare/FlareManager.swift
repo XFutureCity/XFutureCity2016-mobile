@@ -373,8 +373,9 @@ public class FlareManager: APIManager {
     // x, y, distance: filter things whose position is within distance from the given point
     // key, value: filter things whose data contains the given key/value pair
     public func listThings(environmentId: String, zoneId: String, params: JSONDictionary?, handler:(JSONArray) -> ()) {
-        sendRequest("environments/\(environmentId)/zones/\(zoneId)/things", params: params)
-            {json in handler(json as! JSONArray)}
+        sendRequest("environments/\(environmentId)/zones/\(zoneId)/things", params: params) {json in
+            handler(json as! JSONArray)
+        }
     }
     
     public func newThing(environmentId: String, zoneId: String, thing: JSONDictionary, handler:(JSONDictionary) -> ()) {

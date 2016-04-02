@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Ol5-hJ-ii9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Ol5-hJ-ii9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Compass-->
         <scene sceneID="FHK-ta-WdB">
             <objects>
-                <viewController id="OJx-f3-wAt" customClass="CompassViewController" customModule="Trilateral" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OJx-f3-wAt" customClass="CompassViewController" customModule="XFCA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="okC-Lb-cah">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="ZT4-A6-mbA" customClass="CompassView" customModule="Trilateral" customModuleProvider="target">
+                            <view contentMode="scaleToFill" id="ZT4-A6-mbA" customClass="CompassView" customModule="XFCA" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -97,7 +98,7 @@
         <!--Thing-->
         <scene sceneID="Kmc-7Y-2aM">
             <objects>
-                <viewController id="7L3-NY-tnh" customClass="NearbyThingController" customModule="Trilateral" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7L3-NY-tnh" customClass="NearbyThingController" customModule="XFCA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DRG-XC-aId">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,42 +145,42 @@
                                     <action selector="performAction:" destination="7L3-NY-tnh" eventType="touchUpInside" id="5uD-US-uJy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jv5-wh-58R" customClass="ColorButton" customModule="Trilateral" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jv5-wh-58R" customClass="ColorButton" customModule="XFCA" customModuleProvider="target">
                                 <rect key="frame" x="19" y="775" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="setColor:" destination="7L3-NY-tnh" eventType="touchUpInside" id="Qat-RD-8ja"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dkx-NU-PBp" customClass="ColorButton" customModule="Trilateral" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dkx-NU-PBp" customClass="ColorButton" customModule="XFCA" customModuleProvider="target">
                                 <rect key="frame" x="77" y="775" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="setColor:" destination="7L3-NY-tnh" eventType="touchUpInside" id="YXo-9C-CHi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sww-JH-Kcr" customClass="ColorButton" customModule="Trilateral" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sww-JH-Kcr" customClass="ColorButton" customModule="XFCA" customModuleProvider="target">
                                 <rect key="frame" x="138" y="775" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="setColor:" destination="7L3-NY-tnh" eventType="touchUpInside" id="FCc-3X-WE4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eBE-Fe-BgY" customClass="ColorButton" customModule="Trilateral" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eBE-Fe-BgY" customClass="ColorButton" customModule="XFCA" customModuleProvider="target">
                                 <rect key="frame" x="196" y="775" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="setColor:" destination="7L3-NY-tnh" eventType="touchUpInside" id="MMC-pD-oji"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pjJ-3t-rT4" customClass="ColorButton" customModule="Trilateral" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pjJ-3t-rT4" customClass="ColorButton" customModule="XFCA" customModuleProvider="target">
                                 <rect key="frame" x="254" y="775" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="setColor:" destination="7L3-NY-tnh" eventType="touchUpInside" id="IE3-87-FUF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fGx-YK-7au" customClass="ColorButton" customModule="Trilateral" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fGx-YK-7au" customClass="ColorButton" customModule="XFCA" customModuleProvider="target">
                                 <rect key="frame" x="312" y="775" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
@@ -255,7 +256,7 @@
         <!--iPhone-->
         <scene sceneID="WsY-bU-gsp">
             <objects>
-                <viewController id="7ex-jB-g52" customClass="DeviceController" customModule="Trilateral" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7ex-jB-g52" customClass="DeviceController" customModule="XFCA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aV3-pF-pdC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -425,17 +426,17 @@
         <!--List-->
         <scene sceneID="q3a-Pn-rQo">
             <objects>
-                <tableViewController id="vdV-QC-A5i" customClass="CatalogController" customModule="Trilateral" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="vdV-QC-A5i" customClass="CatalogController" customModule="XFCA" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="30" sectionFooterHeight="28" id="Sta-I3-T2z">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ThingCell" rowHeight="70" id="Ffa-8t-G5K" customClass="ThingCell" customModule="Trilateral" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ThingCell" rowHeight="70" id="Ffa-8t-G5K" customClass="ThingCell" customModule="XFCA" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="30" width="768" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ffa-8t-G5K" id="4ZH-nW-gwf">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$199" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ayp-An-BiW">
@@ -495,7 +496,8 @@
         <!--Tab Bar Controller-->
         <scene sceneID="ES2-aS-zE9">
             <objects>
-                <tabBarController id="Ol5-hJ-ii9" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8cg-HW-czT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="Ol5-hJ-ii9" customClass="TabBarController" customModule="XFCA" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="rsu-ae-uaT">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -509,19 +511,18 @@
                         <segue destination="7L3-NY-tnh" kind="relationship" relationship="viewControllers" id="09l-ue-uBq"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8cg-HW-czT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1895" y="252"/>
         </scene>
         <!--Map-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Map" id="BYZ-38-t0r" customClass="MapViewController" customModule="Trilateral" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map" id="BYZ-38-t0r" customClass="MapViewController" customModule="XFCA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="d50-y2-hOd" customClass="IndoorMap" customModule="Trilateral" customModuleProvider="target">
+                            <view contentMode="scaleToFill" id="d50-y2-hOd" customClass="IndoorMap" customModule="XFCA" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="-11" width="768" height="986"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
