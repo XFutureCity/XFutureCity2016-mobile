@@ -17,7 +17,7 @@ extension Device {
 }
 
 @available(iOS 9.0, *)
-class CatalogController: UIViewController, UICollectionViewDataSource, FlareController, UIScrollViewDelegate {
+class CatalogController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, FlareController, UIScrollViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -28,9 +28,11 @@ class CatalogController: UIViewController, UICollectionViewDataSource, FlareCont
     let thingCellIdentifier = "Cell"
     var thingsSortedByAngle = [Thing]()
     var currentPage = 0
+    let scaleAnimator = ScaleAnimator()
     
     var currentEnvironment: Environment? { didSet(value) {
         self.collectionView.reloadData()
+        self.updateBackground()
         
         // Set current position (for demo)
         if let device = device {
@@ -40,10 +42,9 @@ class CatalogController: UIViewController, UICollectionViewDataSource, FlareCont
     
     var currentZone: Zone?
     var device: Device?
-    var nearbyThing: Thing? { didSet(value) {
-            // update selection
-            dataChanged()
-        }}
+    var nearbyThing: Thing? { didSet {
+        dataChanged()
+    }}
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,21 +56,6 @@ class CatalogController: UIViewController, UICollectionViewDataSource, FlareCont
         appDelegate.updateFlareController()
         self.setupCollectionViewLayout()
         dataChanged()
-    }
-
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        if currentEnvironment == nil { return 1 }
-        return currentEnvironment!.zones.count
-    }
-    
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return thingsSortedByAngle.count
-    }
-    
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(thingCellIdentifier, forIndexPath: indexPath) as! CatalogCell
-        cell.update(thingsSortedByAngle[indexPath.item], device: device!)
-        return cell
     }
 
     func dataChanged() {
@@ -104,12 +90,33 @@ class CatalogController: UIViewController, UICollectionViewDataSource, FlareCont
         tabBar.hidden = !tabBar.hidden
     }
     
+    // CollectionViewDataSource
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        if currentEnvironment == nil { return 1 }
+        return currentEnvironment!.zones.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return thingsSortedByAngle.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(thingCellIdentifier, forIndexPath: indexPath) as! CatalogCell
+        cell.update(thingsSortedByAngle[indexPath.item], device: device!)
+        return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let cardDetailViewController = storyboard!.instantiateViewControllerWithIdentifier("CardDetailViewController")
+        cardDetailViewController.transitioningDelegate = self
+        self.presentViewController(cardDetailViewController, animated: true, completion: nil)
+    }
+    
+    // Collection View Layout
+    
     private var itemSize: CGSize {
-        let nominalScreenWidth: CGFloat = 320.0
-        let nominalItemWidth: CGFloat = 246.0
-        let nominalItemHeight: CGFloat = 500.0
-        let coefficient: CGFloat = self.view.bounds.size.width / nominalScreenWidth
-        return CGSize(width: coefficient * nominalItemWidth, height: coefficient * nominalItemHeight)
+        return CGSize(width: 300, height: 120)
     }
     
     func setupCollectionViewLayout() {
@@ -123,7 +130,9 @@ class CatalogController: UIViewController, UICollectionViewDataSource, FlareCont
         self.collectionView.collectionViewLayout = layout
     }
     
-    func updatePagingIndicator() {
+    // Background
+    
+    func updateBackground() {
         guard self.collectionView.bounds.width > 0 else {
             return
         }
@@ -150,6 +159,28 @@ class CatalogController: UIViewController, UICollectionViewDataSource, FlareCont
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        self.updatePagingIndicator()
+        self.updateBackground()
+    }
+}
+
+
+extension CatalogController: UIViewControllerTransitioningDelegate {
+    
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        guard let indexPaths = collectionView.indexPathsForSelectedItems() where indexPaths.count > 0 else {
+            return nil
+        }
+        guard let cell = collectionView.cellForItemAtIndexPath(indexPaths[0]) else {
+            return nil
+        }
+        self.scaleAnimator.originFrame = cell.superview!.convertRect(cell.frame, toView: nil)
+        self.scaleAnimator.presenting = true
+        
+        return self.scaleAnimator
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        self.scaleAnimator.presenting = false
+        return self.scaleAnimator
     }
 }
