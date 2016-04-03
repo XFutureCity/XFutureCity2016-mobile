@@ -21,6 +21,9 @@ class CatalogCell : UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cardContainer: UIView!
     @IBOutlet weak var compass: DirectionView!
+    @IBOutlet weak var ligne3: UILabel?
+    @IBOutlet weak var ligne7: UILabel?
+    @IBOutlet weak var ligne8: UILabel?
     
     private weak var overlayCursor: UIImageView?
     
@@ -49,6 +52,14 @@ class CatalogCell : UICollectionViewCell {
         nameLabel.textColor = thing.uiColor == UIColor.whiteColor() ? .blackColor() : .whiteColor()
         subnameLabel.textColor = nameLabel.textColor
         compass.tintColor = thing.uiColor
+        
+        ligne3?.layer.borderColor = UIColor.whiteColor().CGColor
+        ligne3?.layer.borderWidth = 1.0
+        ligne7?.layer.borderColor = UIColor.whiteColor().CGColor
+        ligne7?.layer.borderWidth = 1.0
+        ligne8?.layer.borderColor = UIColor.whiteColor().CGColor
+        ligne8?.layer.borderWidth = 1.0
+        
         let rads = degreesToRadians(device.angleTo(thing)) - degreesToRadians(device.angle())
         compass.angle = rads
     }
