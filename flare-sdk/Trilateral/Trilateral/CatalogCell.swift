@@ -21,6 +21,10 @@ class CatalogCell : UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cardContainer: UIView!
     @IBOutlet weak var compass: DirectionView!
+    @IBOutlet weak var compass: UIView!
+    @IBOutlet weak var ligne3: UILabel!
+    @IBOutlet weak var ligne7: UILabel!
+    @IBOutlet weak var ligne8: UILabel!
     
     func update(thing: Thing, device: Device) {
         nameLabel.text = thing.name
@@ -32,6 +36,13 @@ class CatalogCell : UICollectionViewCell {
         let renderedImage = image?.imageWithRenderingMode(.AlwaysTemplate)
         compass.image = renderedImage
         compass.tintColor = thing.uiColor
+        
+        ligne3?.layer.borderColor = UIColor.whiteColor().CGColor
+        ligne3?.layer.borderWidth = 1.0
+        ligne7?.layer.borderColor = UIColor.whiteColor().CGColor
+        ligne7?.layer.borderWidth = 1.0
+        ligne8?.layer.borderColor = UIColor.whiteColor().CGColor
+        ligne8?.layer.borderWidth = 1.0
         
         let rads = degreesToRadians(device.angleTo(thing)) - degreesToRadians(device.angle())
         compass.angle = rads
