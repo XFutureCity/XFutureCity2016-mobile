@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4237EA1A1CB08CCE00E75B60 /* DirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4237EA191CB08CCE00E75B60 /* DirectionView.swift */; };
+		4237EA221CB09D2A00E75B60 /* compass-cursor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4237EA211CB09D2A00E75B60 /* compass-cursor@2x.png */; };
+		4237EA241CB09DC700E75B60 /* compass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4237EA231CB09DC700E75B60 /* compass@2x.png */; };
 		4287AF701CAF456400F4D46F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF6F1CAF456400F4D46F /* TabBarController.swift */; };
 		4287AF721CAFC1F300F4D46F /* CatalogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287AF711CAFC1F300F4D46F /* CatalogCell.swift */; };
 		4287AF791CAFDAE900F4D46F /* entrance-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4287AF761CAFDAE900F4D46F /* entrance-1.jpg */; };
@@ -32,7 +34,6 @@
 		4287AFA81CB047C500F4D46F /* Pharmacie-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFA71CB047C500F4D46F /* Pharmacie-Icon@2x.png */; };
 		4287AFAB1CB05ECE00F4D46F /* cafedelapaix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFA91CB05ECE00F4D46F /* cafedelapaix.jpg */; };
 		4287AFAC1CB05ECE00F4D46F /* pharmacy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFAA1CB05ECE00F4D46F /* pharmacy.jpg */; };
-		5C551FA41CB06CBA004DC860 /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C551FA31CB06CBA004DC860 /* compass.png */; };
 		C94290E71C1B83A400FFAA84 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94290E61C1B83A400FFAA84 /* ColorButton.swift */; };
 		C95CEBF91C1209B100C3A226 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBF81C1209B100C3A226 /* CompassView.swift */; };
 		C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBFA1C163A1700C3A226 /* DeviceController.swift */; };
@@ -118,6 +119,8 @@
 
 /* Begin PBXFileReference section */
 		4237EA191CB08CCE00E75B60 /* DirectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionView.swift; sourceTree = "<group>"; };
+		4237EA211CB09D2A00E75B60 /* compass-cursor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass-cursor@2x.png"; sourceTree = "<group>"; };
+		4237EA231CB09DC700E75B60 /* compass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass@2x.png"; sourceTree = "<group>"; };
 		4287AF6F1CAF456400F4D46F /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4287AF711CAFC1F300F4D46F /* CatalogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogCell.swift; sourceTree = "<group>"; };
 		4287AF761CAFDAE900F4D46F /* entrance-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "entrance-1.jpg"; sourceTree = "<group>"; };
@@ -144,7 +147,6 @@
 		4287AFA71CB047C500F4D46F /* Pharmacie-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pharmacie-Icon@2x.png"; sourceTree = "<group>"; };
 		4287AFA91CB05ECE00F4D46F /* cafedelapaix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cafedelapaix.jpg; sourceTree = "<group>"; };
 		4287AFAA1CB05ECE00F4D46F /* pharmacy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pharmacy.jpg; sourceTree = "<group>"; };
-		5C551FA31CB06CBA004DC860 /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass.png; sourceTree = "<group>"; };
 		C94290E61C1B83A400FFAA84 /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		C95CEBF81C1209B100C3A226 /* CompassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		C95CEBFA1C163A1700C3A226 /* DeviceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
@@ -222,9 +224,10 @@
 		4287AF751CAFDAE900F4D46F /* Rersouces */ = {
 			isa = PBXGroup;
 			children = (
+				4237EA211CB09D2A00E75B60 /* compass-cursor@2x.png */,
+				4237EA231CB09DC700E75B60 /* compass@2x.png */,
 				4287AFA91CB05ECE00F4D46F /* cafedelapaix.jpg */,
 				4287AFAA1CB05ECE00F4D46F /* pharmacy.jpg */,
-				5C551FA31CB06CBA004DC860 /* compass.png */,
 				4287AFA71CB047C500F4D46F /* Pharmacie-Icon@2x.png */,
 				4287AF9F1CB0417B00F4D46F /* Restaurant-Icon@2x.png */,
 				4287AFA01CB0417B00F4D46F /* Fullcircle - Icon@2x.png */,
@@ -468,7 +471,6 @@
 				C95E8F881C5C115F00C30E8E /* erska-orange.png in Resources */,
 				4287AFA21CB0417B00F4D46F /* Restaurant-Icon@2x.png in Resources */,
 				4287AF7B1CAFDAE900F4D46F /* RobotoCondensed-Bold.ttf in Resources */,
-				5C551FA41CB06CBA004DC860 /* compass.png in Resources */,
 				C9D397671C18B3FD006E6343 /* Settings.bundle in Resources */,
 				C95E8F8D1C5C115F00C30E8E /* kallax-birch.png in Resources */,
 				4287AF941CB015D400F4D46F /* vignette.png in Resources */,
@@ -483,8 +485,10 @@
 				C95E8F831C5C115F00C30E8E /* coombe-yellow.png in Resources */,
 				4287AF9B1CB03E8F00F4D46F /* Museum-Icon.png in Resources */,
 				C95E8F811C5C115F00C30E8E /* coombe-lightgray.png in Resources */,
+				4237EA241CB09DC700E75B60 /* compass@2x.png in Resources */,
 				C95E8F801C5C115F00C30E8E /* coombe-gray.png in Resources */,
 				C95E8F9C1C5C115F00C30E8E /* knopparp-green.png in Resources */,
+				4237EA221CB09D2A00E75B60 /* compass-cursor@2x.png in Resources */,
 				C95E8F8F1C5C115F00C30E8E /* kallax-oak.png in Resources */,
 				C95E8F7A1C5C115F00C30E8E /* arholma-blue.png in Resources */,
 				C95E8F891C5C115F00C30E8E /* erska-purple.png in Resources */,
@@ -650,7 +654,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Simone Civetta (NXCPWM8SF4)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"../Flare/Output/Release-iphoneos",
@@ -661,7 +665,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.xebia.xfuturecity.projecta-bis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "dd922e83-ceb9-4079-b812-8722c5315d55";
+				PROVISIONING_PROFILE = "043f204c-7f09-463b-9bd5-f8cbd48315c3";
 				SWIFT_OBJC_BRIDGING_HEADER = Trilateral/BridgingHeader.h;
 			};
 			name = Debug;
@@ -670,7 +674,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Simone Civetta (NXCPWM8SF4)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"../Flare/Output/Release-iphoneos",
@@ -681,7 +685,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.xebia.xfuturecity.projecta-bis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "dd922e83-ceb9-4079-b812-8722c5315d55";
+				PROVISIONING_PROFILE = "043f204c-7f09-463b-9bd5-f8cbd48315c3";
 				SWIFT_OBJC_BRIDGING_HEADER = Trilateral/BridgingHeader.h;
 			};
 			name = Release;
