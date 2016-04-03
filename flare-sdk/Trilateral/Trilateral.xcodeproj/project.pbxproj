@@ -39,6 +39,8 @@
 		4287AFAC1CB05ECE00F4D46F /* pharmacy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4287AFAA1CB05ECE00F4D46F /* pharmacy.jpg */; };
 		5C551FAB1CB0A751004DC860 /* Phone-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C551FA91CB0A751004DC860 /* Phone-Icon.png */; };
 		5C551FAC1CB0A751004DC860 /* Phone-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C551FAA1CB0A751004DC860 /* Phone-Icon@2x.png */; };
+		5C551FAF1CB11D64004DC860 /* metroentrance-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C551FAD1CB11D64004DC860 /* metroentrance-icon.png */; };
+		5C551FB01CB11D64004DC860 /* metroentrance-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C551FAE1CB11D64004DC860 /* metroentrance-icon@2x.png */; };
 		C94290E71C1B83A400FFAA84 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94290E61C1B83A400FFAA84 /* ColorButton.swift */; };
 		C95CEBF91C1209B100C3A226 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBF81C1209B100C3A226 /* CompassView.swift */; };
 		C95CEBFB1C163A1700C3A226 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CEBFA1C163A1700C3A226 /* DeviceController.swift */; };
@@ -157,6 +159,8 @@
 		4287AFAA1CB05ECE00F4D46F /* pharmacy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pharmacy.jpg; sourceTree = "<group>"; };
 		5C551FA91CB0A751004DC860 /* Phone-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phone-Icon.png"; sourceTree = "<group>"; };
 		5C551FAA1CB0A751004DC860 /* Phone-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phone-Icon@2x.png"; sourceTree = "<group>"; };
+		5C551FAD1CB11D64004DC860 /* metroentrance-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metroentrance-icon.png"; sourceTree = "<group>"; };
+		5C551FAE1CB11D64004DC860 /* metroentrance-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metroentrance-icon@2x.png"; sourceTree = "<group>"; };
 		C94290E61C1B83A400FFAA84 /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		C95CEBF81C1209B100C3A226 /* CompassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		C95CEBFA1C163A1700C3A226 /* DeviceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
@@ -234,6 +238,8 @@
 		4287AF751CAFDAE900F4D46F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5C551FAD1CB11D64004DC860 /* metroentrance-icon.png */,
+				5C551FAE1CB11D64004DC860 /* metroentrance-icon@2x.png */,
 				4237EA291CB0B19500E75B60 /* metro@2x.png */,
 				4237EA271CB0B06200E75B60 /* Close-Icon@2x.png */,
 				4237EA251CB0AE6F00E75B60 /* Echo-Icon@2x.png */,
@@ -509,6 +515,7 @@
 				C95E8F9C1C5C115F00C30E8E /* knopparp-green.png in Resources */,
 				4237EA221CB09D2A00E75B60 /* compass-cursor@2x.png in Resources */,
 				C95E8F8F1C5C115F00C30E8E /* kallax-oak.png in Resources */,
+				5C551FAF1CB11D64004DC860 /* metroentrance-icon.png in Resources */,
 				C95E8F7A1C5C115F00C30E8E /* arholma-blue.png in Resources */,
 				C95E8F891C5C115F00C30E8E /* erska-purple.png in Resources */,
 				C95E8F841C5C115F00C30E8E /* dagarn-green.png in Resources */,
@@ -516,6 +523,7 @@
 				5C551FAB1CB0A751004DC860 /* Phone-Icon.png in Resources */,
 				C95E8F7E1C5C115F00C30E8E /* arholma-white.png in Resources */,
 				C95E8F941C5C115F00C30E8E /* karlstad-white.png in Resources */,
+				5C551FB01CB11D64004DC860 /* metroentrance-icon@2x.png in Resources */,
 				C95E8F861C5C115F00C30E8E /* dagarn-purple.png in Resources */,
 				4287AFA31CB0417B00F4D46F /* Fullcircle - Icon@2x.png in Resources */,
 				4287AF7A1CAFDAE900F4D46F /* entrance-2.jpg in Resources */,
