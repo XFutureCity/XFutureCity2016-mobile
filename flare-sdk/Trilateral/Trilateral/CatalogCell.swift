@@ -35,6 +35,7 @@ class CatalogCell : UICollectionViewCell {
         let overlay = UIImageView(image: UIImage(named: "compass-cursor@2x.png"))
         overlay.contentMode = .ScaleToFill
         overlay.frame = compass.bounds
+        overlay.isAccessibilityElement = false
         overlayCursor = overlay
         compass.addSubview(overlay)
     }

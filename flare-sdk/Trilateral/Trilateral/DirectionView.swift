@@ -16,16 +16,19 @@ func radiansToDegrees(angle: Double) -> Double {
 }
 
 class DirectionView : UIImageView {
+    
     var angle: Double = 0.0 {
         didSet(value) {
             self.transform = CGAffineTransformMakeRotation(CGFloat(value));
             self.applyAccessibilityLabel()
+            self.isAccessibilityElement = true
+            self.accessibilityTraits = UIAccessibilityTraitStaticText
         }
     }
     
     private func applyAccessibilityLabel() {
         let degrees = radiansToDegrees(angle)
-        let degreesNormalized = degrees < 0 ? 360 - degrees : degrees
+        let degreesNormalized = degrees < 0 ? 360 + degrees : degrees
         switch degreesNormalized {
         case 45..<135:
             self.accessibilityLabel = "Right"

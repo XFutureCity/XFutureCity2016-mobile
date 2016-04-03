@@ -738,7 +738,7 @@
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                            <accessibility key="accessibilityConfiguration" label="Excellent">
+                                                            <accessibility key="accessibilityConfiguration" label="Rating: Excellent">
                                                                 <bool key="isElement" value="YES"/>
                                                             </accessibility>
                                                             <constraints>
@@ -897,7 +897,7 @@
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <accessibility key="accessibilityConfiguration" label="Good">
+                                                    <accessibility key="accessibilityConfiguration" label="Rating: Good">
                                                         <bool key="isElement" value="YES"/>
                                                     </accessibility>
                                                     <constraints>
@@ -1016,7 +1016,7 @@
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                            <accessibility key="accessibilityConfiguration" label="Good">
+                                                            <accessibility key="accessibilityConfiguration" label="Rating: Good">
                                                                 <bool key="isElement" value="YES"/>
                                                             </accessibility>
                                                             <constraints>

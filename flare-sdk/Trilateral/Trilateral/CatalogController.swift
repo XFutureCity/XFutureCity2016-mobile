@@ -12,12 +12,12 @@ import Flare
 extension Device {
     var normalizedAngle: CGFloat {
         let originalAngle = self.angle()
-        return originalAngle < 0 ? CGFloat(360 - originalAngle) : CGFloat(originalAngle)
+        return originalAngle < 0 ? CGFloat(360 + originalAngle) : CGFloat(originalAngle)
     }
 }
 
 @available(iOS 9.0, *)
-class CatalogController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, FlareController, UIScrollViewDelegate {
+class CatalogController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, FlareController, UIScrollViewDelegate, UIScrollViewAccessibilityDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -153,6 +153,13 @@ class CatalogController: UIViewController, UICollectionViewDataSource, UICollect
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         self.updateBackground()
+    }
+    
+    func accessibilityScrollStatusForScrollView(scrollView: UIScrollView) -> String? {
+        let xOffset = scrollView.contentOffset.x
+        let page: Int = Int(round(xOffset / scrollView.bounds.width))
+        let thing = thingsSortedByAngle[page]
+        return "Page \(page) of \(thingsSortedByAngle.count): \(thing.name)"
     }
 }
 
