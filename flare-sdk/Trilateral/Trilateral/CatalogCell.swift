@@ -20,17 +20,20 @@ class CatalogCell : UICollectionViewCell {
     @IBOutlet weak var subnameLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cardContainer: UIView!
-    @IBOutlet weak var compass: UIView!
+    @IBOutlet weak var compass: DirectionView!
     
     func update(thing: Thing, device: Device) {
         nameLabel.text = thing.name
         cardContainer.backgroundColor = thing.uiColor
         nameLabel.textColor = thing.uiColor == UIColor.whiteColor() ? .blackColor() : .whiteColor()
         subnameLabel.textColor = nameLabel.textColor
-        cardContainer.layer.borderColor = UIColor.whiteColor().CGColor
-        cardContainer.layer.borderWidth = 1.0
+        
+        let image = UIImage(named: "compass.png")
+        let renderedImage = image?.imageWithRenderingMode(.AlwaysTemplate)
+        compass.image = renderedImage
+        compass.tintColor = thing.uiColor
         
         let rads = degreesToRadians(device.angleTo(thing)) - degreesToRadians(device.angle())
-        compass.transform = CGAffineTransformMakeRotation(CGFloat(rads));
+        compass.angle = rads
     }
 }

@@ -632,7 +632,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="nT5-Kf-fAq">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="nT5-Kf-fAq" customClass="DirectionView" customModule="XFCA" customModuleProvider="target">
                                                     <rect key="frame" x="40" y="175" width="250" height="250"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="250" id="1WL-gV-oYa"/>
@@ -664,7 +664,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="330" height="700"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="xdA-zb-uZ4">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="xdA-zb-uZ4" customClass="DirectionView" customModule="XFCA" customModuleProvider="target">
                                                     <rect key="frame" x="40" y="175" width="250" height="250"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="xdA-zb-uZ4" secondAttribute="height" multiplier="1:1" id="U1H-JH-cVj"/>
@@ -799,7 +799,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="330" height="700"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="fZt-Tc-jEb">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="fZt-Tc-jEb" customClass="DirectionView" customModule="XFCA" customModuleProvider="target">
                                                     <rect key="frame" x="40" y="175" width="250" height="250"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="250" id="Oat-zT-W2c"/>
@@ -942,7 +942,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="330" height="700"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="JBh-84-GGc">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="JBh-84-GGc" customClass="DirectionView" customModule="XFCA" customModuleProvider="target">
                                                     <rect key="frame" x="40" y="175" width="250" height="250"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="JBh-84-GGc" secondAttribute="height" multiplier="1:1" id="NUi-KK-ndd"/>
