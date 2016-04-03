@@ -811,6 +811,13 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JR3-xS-EwL">
                                                     <rect key="frame" x="0.0" y="580" width="330" height="120"/>
                                                     <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phone-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="iOp-O9-s2e">
+                                                            <rect key="frame" x="10" y="69" width="10" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="16" id="cNi-gb-AIa"/>
+                                                                <constraint firstAttribute="width" constant="10" id="yXa-5N-7PI"/>
+                                                            </constraints>
+                                                        </imageView>
                                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qa7-20-gab">
                                                             <rect key="frame" x="8" y="8" width="262" height="34"/>
                                                             <accessibility key="accessibilityConfiguration">
@@ -836,11 +843,13 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="iOp-O9-s2e" secondAttribute="bottom" constant="35" id="2Bo-sc-BCk"/>
                                                         <constraint firstAttribute="trailing" secondItem="HBu-Lw-bGn" secondAttribute="trailing" constant="8" id="4XF-3E-jRu"/>
                                                         <constraint firstAttribute="height" constant="120" id="Cdc-c9-yht"/>
                                                         <constraint firstAttribute="bottom" secondItem="ME6-JK-Nxf" secondAttribute="bottom" constant="8" id="EGS-47-vIp"/>
                                                         <constraint firstItem="HBu-Lw-bGn" firstAttribute="top" secondItem="JR3-xS-EwL" secondAttribute="top" constant="8" id="KUY-Gb-Fs3"/>
                                                         <constraint firstItem="HBu-Lw-bGn" firstAttribute="leading" secondItem="Qa7-20-gab" secondAttribute="trailing" constant="6" id="L9C-le-CGc"/>
+                                                        <constraint firstItem="iOp-O9-s2e" firstAttribute="leading" secondItem="JR3-xS-EwL" secondAttribute="leading" constant="10" id="Vnr-k3-aYy"/>
                                                         <constraint firstAttribute="trailing" secondItem="ME6-JK-Nxf" secondAttribute="trailing" constant="8" id="eBE-iv-r67"/>
                                                         <constraint firstItem="Qa7-20-gab" firstAttribute="top" secondItem="JR3-xS-EwL" secondAttribute="top" constant="8" id="oaO-vu-GpV"/>
                                                         <constraint firstItem="Qa7-20-gab" firstAttribute="leading" secondItem="JR3-xS-EwL" secondAttribute="leading" constant="8" id="xeg-DZ-mSx"/>
@@ -852,7 +861,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01 42 96 08 32" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaE-ej-Npn">
-                                                    <rect key="frame" x="10" y="648" width="84" height="20"/>
+                                                    <rect key="frame" x="28" y="648" width="84" height="20"/>
                                                     <fontDescription key="fontDescription" name="RobotoCondensed-Light" family="Roboto Condensed" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -920,12 +929,12 @@
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="TaE-ej-Npn" firstAttribute="leading" secondItem="tR5-K4-6TR" secondAttribute="leadingMargin" constant="2" id="GVp-oP-0zU"/>
                                             <constraint firstItem="JR3-xS-EwL" firstAttribute="leading" secondItem="tR5-K4-6TR" secondAttribute="leading" id="LuT-u5-ggu"/>
                                             <constraint firstAttribute="bottom" secondItem="TaE-ej-Npn" secondAttribute="bottom" constant="32" id="SzQ-jt-cq4"/>
                                             <constraint firstItem="l7C-tS-Y2R" firstAttribute="leading" secondItem="tR5-K4-6TR" secondAttribute="leading" constant="8" id="UP4-fK-fcE"/>
                                             <constraint firstItem="fZt-Tc-jEb" firstAttribute="centerX" secondItem="tR5-K4-6TR" secondAttribute="centerX" id="Uue-IX-vwE"/>
                                             <constraint firstItem="fZt-Tc-jEb" firstAttribute="centerY" secondItem="tR5-K4-6TR" secondAttribute="centerY" constant="-50" id="Xzn-r0-ihd"/>
+                                            <constraint firstItem="TaE-ej-Npn" firstAttribute="leading" secondItem="tR5-K4-6TR" secondAttribute="leading" constant="28" id="dAG-AW-4Hf"/>
                                             <constraint firstAttribute="bottom" secondItem="l7C-tS-Y2R" secondAttribute="bottom" constant="8" id="eIA-6T-0ng"/>
                                             <constraint firstAttribute="bottom" secondItem="JR3-xS-EwL" secondAttribute="bottom" id="mEz-RU-y3i"/>
                                             <constraint firstAttribute="trailing" secondItem="JR3-xS-EwL" secondAttribute="trailing" id="zJA-uS-Tax"/>
@@ -963,6 +972,13 @@
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phone-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Tob-rv-q4b">
+                                                            <rect key="frame" x="10" y="69" width="10" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="10" id="WFe-IO-UWk"/>
+                                                                <constraint firstAttribute="height" constant="16" id="hQI-XZ-uZA"/>
+                                                            </constraints>
+                                                        </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pharmacie-Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="UX8-sz-cFb">
                                                             <rect key="frame" x="276" y="8" width="46" height="46"/>
                                                             <constraints>
@@ -971,7 +987,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01 42 96 07 32" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hJ-Mf-C0Y">
-                                                            <rect key="frame" x="8" y="68" width="84" height="20"/>
+                                                            <rect key="frame" x="28" y="68" width="84" height="20"/>
                                                             <fontDescription key="fontDescription" name="RobotoCondensed-Light" family="Roboto Condensed" pointSize="15"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -1047,8 +1063,10 @@
                                                         <constraint firstItem="UX8-sz-cFb" firstAttribute="top" secondItem="RQo-i8-6aZ" secondAttribute="top" constant="8" id="4r6-Sd-obj"/>
                                                         <constraint firstAttribute="bottom" secondItem="CIy-N3-lm7" secondAttribute="bottom" constant="8" id="BSV-cg-bCb"/>
                                                         <constraint firstAttribute="bottom" secondItem="bjD-He-C2O" secondAttribute="bottom" constant="8" id="DU0-P7-sRJ"/>
-                                                        <constraint firstItem="3hJ-Mf-C0Y" firstAttribute="leading" secondItem="RQo-i8-6aZ" secondAttribute="leading" constant="8" id="Mh9-YH-yz5"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Tob-rv-q4b" secondAttribute="bottom" constant="35" id="LgA-OC-4Yu"/>
+                                                        <constraint firstItem="3hJ-Mf-C0Y" firstAttribute="leading" secondItem="RQo-i8-6aZ" secondAttribute="leading" constant="28" id="Mh9-YH-yz5"/>
                                                         <constraint firstItem="Kbf-rL-uD1" firstAttribute="top" secondItem="RQo-i8-6aZ" secondAttribute="top" constant="8" id="UIN-sP-TmR"/>
+                                                        <constraint firstItem="Tob-rv-q4b" firstAttribute="leading" secondItem="RQo-i8-6aZ" secondAttribute="leading" constant="10" id="V6v-Kw-NmH"/>
                                                         <constraint firstAttribute="height" constant="120" id="ZuR-Nc-6ER"/>
                                                         <constraint firstAttribute="bottom" secondItem="3hJ-Mf-C0Y" secondAttribute="bottom" constant="32" id="fJQ-Jf-HyQ"/>
                                                         <constraint firstAttribute="trailing" secondItem="UX8-sz-cFb" secondAttribute="trailing" constant="8" id="fW1-8C-ae7"/>
@@ -1378,6 +1396,7 @@
         <image name="Map" width="25" height="25"/>
         <image name="Museum-Icon.png" width="38" height="38"/>
         <image name="Pharmacie-Icon.png" width="38" height="38"/>
+        <image name="Phone-Icon" width="25" height="25"/>
         <image name="Restaurant-Icon.png" width="38" height="38"/>
         <image name="Subway-Icon.png" width="38" height="38"/>
         <image name="Thing" width="25" height="25"/>
