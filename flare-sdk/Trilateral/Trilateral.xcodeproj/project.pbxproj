@@ -41,6 +41,8 @@
 		5C551FAC1CB0A751004DC860 /* Phone-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C551FAA1CB0A751004DC860 /* Phone-Icon@2x.png */; };
 		5C551FAF1CB11D64004DC860 /* metroentrance-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C551FAD1CB11D64004DC860 /* metroentrance-icon.png */; };
 		5C551FB01CB11D64004DC860 /* metroentrance-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C551FAE1CB11D64004DC860 /* metroentrance-icon@2x.png */; };
+		5C6EC3831CB13C10008F91F8 /* Entry-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6EC3811CB13C10008F91F8 /* Entry-Icon.png */; };
+		5C6EC3841CB13C10008F91F8 /* Entry-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6EC3821CB13C10008F91F8 /* Entry-Icon@2x.png */; };
 		5CFE21A01CB137BE00CCFFCC /* HomeQian.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CFE219F1CB137BE00CCFFCC /* HomeQian.png */; };
 		5CFE21A21CB13A3500CCFFCC /* IndoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFE21A11CB13A3500CCFFCC /* IndoorViewController.swift */; };
 		C94290E71C1B83A400FFAA84 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94290E61C1B83A400FFAA84 /* ColorButton.swift */; };
@@ -163,6 +165,8 @@
 		5C551FAA1CB0A751004DC860 /* Phone-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phone-Icon@2x.png"; sourceTree = "<group>"; };
 		5C551FAD1CB11D64004DC860 /* metroentrance-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metroentrance-icon.png"; sourceTree = "<group>"; };
 		5C551FAE1CB11D64004DC860 /* metroentrance-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metroentrance-icon@2x.png"; sourceTree = "<group>"; };
+		5C6EC3811CB13C10008F91F8 /* Entry-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Entry-Icon.png"; sourceTree = "<group>"; };
+		5C6EC3821CB13C10008F91F8 /* Entry-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Entry-Icon@2x.png"; sourceTree = "<group>"; };
 		5CFE219F1CB137BE00CCFFCC /* HomeQian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeQian.png; sourceTree = "<group>"; };
 		5CFE21A11CB13A3500CCFFCC /* IndoorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndoorViewController.swift; sourceTree = "<group>"; };
 		C94290E61C1B83A400FFAA84 /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
@@ -256,6 +260,8 @@
 				5CFE219F1CB137BE00CCFFCC /* HomeQian.png */,
 				4287AFA71CB047C500F4D46F /* Pharmacie-Icon@2x.png */,
 				4287AF9F1CB0417B00F4D46F /* Restaurant-Icon@2x.png */,
+				5C6EC3811CB13C10008F91F8 /* Entry-Icon.png */,
+				5C6EC3821CB13C10008F91F8 /* Entry-Icon@2x.png */,
 				4287AFA01CB0417B00F4D46F /* Fullcircle - Icon@2x.png */,
 				4287AFA11CB0417B00F4D46F /* EmptyCircle - Icon@2x.png */,
 				4287AF971CB03E8F00F4D46F /* Museum-Icon.png */,
@@ -504,6 +510,7 @@
 				C9D397671C18B3FD006E6343 /* Settings.bundle in Resources */,
 				C95E8F8D1C5C115F00C30E8E /* kallax-birch.png in Resources */,
 				4287AF941CB015D400F4D46F /* vignette.png in Resources */,
+				5C6EC3841CB13C10008F91F8 /* Entry-Icon@2x.png in Resources */,
 				4287AF9C1CB03E8F00F4D46F /* Museum-Icon@2x.png in Resources */,
 				4237EA281CB0B06200E75B60 /* Close-Icon@2x.png in Resources */,
 				C9D1AA481AC1F5850003B8A1 /* Main.storyboard in Resources */,
@@ -545,6 +552,7 @@
 				C95E8F7D1C5C115F00C30E8E /* arholma-red.png in Resources */,
 				C95E8F7F1C5C115F00C30E8E /* coombe-black.png in Resources */,
 				C95E8F931C5C115F00C30E8E /* karlstad-turquoise.png in Resources */,
+				5C6EC3831CB13C10008F91F8 /* Entry-Icon.png in Resources */,
 				4287AFA81CB047C500F4D46F /* Pharmacie-Icon@2x.png in Resources */,
 				C95E8F8E1C5C115F00C30E8E /* kallax-black.png in Resources */,
 				C9D1AA4A1AC1F5850003B8A1 /* Images.xcassets in Resources */,

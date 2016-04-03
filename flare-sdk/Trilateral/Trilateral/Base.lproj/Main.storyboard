@@ -1211,10 +1211,10 @@ Opens: 9:00 AM - 19:00 PM</string>
             </objects>
             <point key="canvasLocation" x="-1895" y="2544"/>
         </scene>
-        <!--View Controller-->
+        <!--Indoor View Controller-->
         <scene sceneID="1BZ-PY-8wc">
             <objects>
-                <viewController id="SUT-Kn-Sic" sceneMemberID="viewController">
+                <viewController id="SUT-Kn-Sic" customClass="IndoorViewController" customModule="XFCA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dDJ-B3-e8s"/>
                         <viewControllerLayoutGuide type="bottom" id="7an-yx-zJj"/>
@@ -1230,9 +1230,22 @@ Opens: 9:00 AM - 19:00 PM</string>
                                     <constraint firstAttribute="width" constant="240" id="YF3-HB-ZFE"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gS6-Rr-1Zs">
+                                <rect key="frame" x="20" y="949" width="40" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="VNT-nm-9YE"/>
+                                    <constraint firstAttribute="height" constant="45" id="j2P-sL-KpW"/>
+                                </constraints>
+                                <state key="normal" image="Entry-Icon.png"/>
+                                <connections>
+                                    <action selector="tapOnClose:" destination="SUT-Kn-Sic" eventType="touchUpInside" id="Ayo-hB-cr5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="gS6-Rr-1Zs" firstAttribute="leading" secondItem="0Vy-R0-uQ4" secondAttribute="leadingMargin" id="96x-TO-kNe"/>
+                            <constraint firstItem="7an-yx-zJj" firstAttribute="top" secondItem="gS6-Rr-1Zs" secondAttribute="bottom" constant="30" id="B2j-WW-RHD"/>
                             <constraint firstItem="lf6-8D-icU" firstAttribute="centerY" secondItem="0Vy-R0-uQ4" secondAttribute="centerY" id="sjg-is-yEW"/>
                             <constraint firstItem="lf6-8D-icU" firstAttribute="centerX" secondItem="0Vy-R0-uQ4" secondAttribute="centerX" id="ySY-Ic-IsB"/>
                         </constraints>
@@ -1697,6 +1710,7 @@ Opens: 9:00 AM - 19:00 PM</string>
         <image name="Device" width="25" height="25"/>
         <image name="Echo-Icon.png" width="9" height="10"/>
         <image name="EmptyCircle - Icon.png" width="18" height="18"/>
+        <image name="Entry-Icon.png" width="36" height="36"/>
         <image name="Fullcircle - Icon.png" width="18" height="18"/>
         <image name="HomeQian.png" width="1078" height="539"/>
         <image name="Logo" width="225" height="225"/>
