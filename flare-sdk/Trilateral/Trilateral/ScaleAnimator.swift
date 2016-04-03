@@ -10,7 +10,7 @@ import UIKit
 
 class ScaleAnimator : NSObject, UIViewControllerAnimatedTransitioning {
 
-    let duration   = 0.5
+    let duration   = 0.2
     var presenting = true
     var originFrame = CGRect.zero
     var dismissCompletion: (()->())?
@@ -18,7 +18,6 @@ class ScaleAnimator : NSObject, UIViewControllerAnimatedTransitioning {
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return self.duration
     }
-    
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         
@@ -45,8 +44,8 @@ class ScaleAnimator : NSObject, UIViewControllerAnimatedTransitioning {
         containerView.addSubview(toView)
         containerView.bringSubviewToFront(detailView)
         
-        UIView.animateWithDuration(duration, delay:0.0,
-                                   options: [],
+        
+        UIView.animateWithDuration(duration, delay:0.0, options: [.CurveEaseOut],
                                    animations: {
                                     detailView.transform = self.presenting ? CGAffineTransformIdentity : scaleTransform
                                     detailView.center = CGPoint(x: CGRectGetMidX(finalFrame), y: CGRectGetMidY(finalFrame))
