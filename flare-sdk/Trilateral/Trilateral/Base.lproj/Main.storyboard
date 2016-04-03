@@ -28,6 +28,10 @@
             <string>RobotoCondensed-Bold</string>
             <string>RobotoCondensed-Bold</string>
             <string>RobotoCondensed-Bold</string>
+            <string>RobotoCondensed-Bold</string>
+            <string>RobotoCondensed-Bold</string>
+            <string>RobotoCondensed-Bold</string>
+            <string>RobotoCondensed-Bold</string>
         </mutableArray>
         <mutableArray key="RobotoCondensed-Light.ttf">
             <string>RobotoCondensed-Light</string>
@@ -494,6 +498,9 @@
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="YES"/>
+                                                    </accessibility>
                                                     <constraints>
                                                         <constraint firstItem="yFf-sT-W5w" firstAttribute="top" secondItem="3Ue-VM-C9A" secondAttribute="top" constant="8" id="BXO-H0-rQR"/>
                                                         <constraint firstItem="SFF-Gw-V0g" firstAttribute="top" secondItem="3Ue-VM-C9A" secondAttribute="top" constant="8" id="GJ0-TK-2ZL"/>
@@ -652,20 +659,33 @@
                                                         <constraint firstAttribute="width" secondItem="nT5-Kf-fAq" secondAttribute="height" multiplier="1:1" id="cCm-6K-3rq"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHC-zo-9S1">
+                                                    <rect key="frame" x="40" y="390" width="250" height="18"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="ZHC-zo-9S1" firstAttribute="leading" secondItem="k1K-Qz-Sl1" secondAttribute="leadingMargin" constant="32" id="9pj-of-qNW"/>
                                             <constraint firstAttribute="bottom" secondItem="hQ4-sK-rnK" secondAttribute="bottom" id="EuW-mD-fq3"/>
                                             <constraint firstItem="nT5-Kf-fAq" firstAttribute="centerY" secondItem="k1K-Qz-Sl1" secondAttribute="centerY" constant="-50" id="MaW-5Y-wbM"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="ZHC-zo-9S1" secondAttribute="trailing" constant="32" id="OcN-eP-LYV"/>
                                             <constraint firstItem="nT5-Kf-fAq" firstAttribute="centerX" secondItem="k1K-Qz-Sl1" secondAttribute="centerX" id="RWg-nZ-igL"/>
                                             <constraint firstItem="hQ4-sK-rnK" firstAttribute="leading" secondItem="k1K-Qz-Sl1" secondAttribute="leading" id="Shf-id-3fZ"/>
+                                            <constraint firstItem="ZHC-zo-9S1" firstAttribute="top" secondItem="nT5-Kf-fAq" secondAttribute="bottom" constant="-35" id="dOe-ng-7PE"/>
                                             <constraint firstAttribute="trailing" secondItem="hQ4-sK-rnK" secondAttribute="trailing" id="zwW-p4-HKS"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="cardContainer" destination="hQ4-sK-rnK" id="lcj-hj-U6i"/>
                                             <outlet property="compass" destination="nT5-Kf-fAq" id="Bvq-5H-KQ9"/>
+                                            <outlet property="distanceLabel" destination="ZHC-zo-9S1" id="v7s-Jx-Fvk"/>
                                             <outlet property="ligne3" destination="SHR-21-FZd" id="3Uw-Bw-itR"/>
                                             <outlet property="ligne7" destination="xe3-fL-Oa0" id="2vA-tt-8c4"/>
                                             <outlet property="ligne8" destination="5PX-H3-9od" id="qVS-FT-jOL"/>
@@ -790,6 +810,15 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FS-Pc-MLb">
+                                                    <rect key="frame" x="40" y="390" width="250" height="18"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -800,10 +829,14 @@
                                             <constraint firstItem="q3K-Ou-AC2" firstAttribute="leading" secondItem="gIY-hG-ljn" secondAttribute="leading" id="TvG-j9-kRa"/>
                                             <constraint firstItem="xdA-zb-uZ4" firstAttribute="centerY" secondItem="gIY-hG-ljn" secondAttribute="centerY" constant="-50" id="fHN-bY-HXy"/>
                                             <constraint firstAttribute="bottom" secondItem="q3K-Ou-AC2" secondAttribute="bottom" id="kwf-dm-Pih"/>
+                                            <constraint firstItem="1FS-Pc-MLb" firstAttribute="top" secondItem="xdA-zb-uZ4" secondAttribute="bottom" constant="-35" id="m9g-um-C68"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="1FS-Pc-MLb" secondAttribute="trailing" constant="32" id="wE4-qH-xsm"/>
+                                            <constraint firstItem="1FS-Pc-MLb" firstAttribute="leading" secondItem="gIY-hG-ljn" secondAttribute="leadingMargin" constant="32" id="wd6-nT-KtE"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="cardContainer" destination="q3K-Ou-AC2" id="Zzx-e5-lct"/>
                                             <outlet property="compass" destination="xdA-zb-uZ4" id="E8f-m9-RsH"/>
+                                            <outlet property="distanceLabel" destination="1FS-Pc-MLb" id="fyU-Jr-yuk"/>
                                             <outlet property="nameLabel" destination="7qZ-Ms-re4" id="uBL-ys-UkK"/>
                                             <outlet property="subnameLabel" destination="mzO-CG-jQm" id="7y0-Hb-pze"/>
                                         </connections>
@@ -938,24 +971,37 @@
                                                         <constraint firstAttribute="height" constant="20" id="zAS-Le-wvG"/>
                                                     </constraints>
                                                 </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1Q-5E-oTr">
+                                                    <rect key="frame" x="40" y="390" width="250" height="18"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="j1Q-5E-oTr" firstAttribute="top" secondItem="fZt-Tc-jEb" secondAttribute="bottom" constant="-35" id="AQd-Z8-jcG"/>
                                             <constraint firstItem="JR3-xS-EwL" firstAttribute="leading" secondItem="tR5-K4-6TR" secondAttribute="leading" id="LuT-u5-ggu"/>
                                             <constraint firstAttribute="bottom" secondItem="TaE-ej-Npn" secondAttribute="bottom" constant="32" id="SzQ-jt-cq4"/>
                                             <constraint firstItem="l7C-tS-Y2R" firstAttribute="leading" secondItem="tR5-K4-6TR" secondAttribute="leading" constant="8" id="UP4-fK-fcE"/>
+                                            <constraint firstItem="j1Q-5E-oTr" firstAttribute="leading" secondItem="tR5-K4-6TR" secondAttribute="leadingMargin" constant="32" id="UQu-4V-1Ni"/>
                                             <constraint firstItem="fZt-Tc-jEb" firstAttribute="centerX" secondItem="tR5-K4-6TR" secondAttribute="centerX" id="Uue-IX-vwE"/>
                                             <constraint firstItem="fZt-Tc-jEb" firstAttribute="centerY" secondItem="tR5-K4-6TR" secondAttribute="centerY" constant="-50" id="Xzn-r0-ihd"/>
                                             <constraint firstItem="TaE-ej-Npn" firstAttribute="leading" secondItem="tR5-K4-6TR" secondAttribute="leading" constant="28" id="dAG-AW-4Hf"/>
                                             <constraint firstAttribute="bottom" secondItem="l7C-tS-Y2R" secondAttribute="bottom" constant="8" id="eIA-6T-0ng"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="j1Q-5E-oTr" secondAttribute="trailing" constant="32" id="g9i-oz-X1E"/>
                                             <constraint firstAttribute="bottom" secondItem="JR3-xS-EwL" secondAttribute="bottom" id="mEz-RU-y3i"/>
                                             <constraint firstAttribute="trailing" secondItem="JR3-xS-EwL" secondAttribute="trailing" id="zJA-uS-Tax"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="cardContainer" destination="JR3-xS-EwL" id="1DD-O6-EhI"/>
                                             <outlet property="compass" destination="fZt-Tc-jEb" id="16B-qd-Gld"/>
+                                            <outlet property="distanceLabel" destination="j1Q-5E-oTr" id="kkI-Ri-O9e"/>
                                             <outlet property="nameLabel" destination="Qa7-20-gab" id="nRs-sq-U3m"/>
                                             <outlet property="subnameLabel" destination="ME6-JK-Nxf" id="2fe-vo-t4y"/>
                                         </connections>
@@ -1094,6 +1140,15 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fzg-Jf-q91">
+                                                    <rect key="frame" x="40" y="390" width="250" height="18"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -1101,13 +1156,17 @@
                                         <constraints>
                                             <constraint firstItem="JBh-84-GGc" firstAttribute="centerX" secondItem="YLG-lP-BQo" secondAttribute="centerX" id="1Qw-JN-EsF"/>
                                             <constraint firstAttribute="trailing" secondItem="RQo-i8-6aZ" secondAttribute="trailing" id="6MX-hg-Fu7"/>
+                                            <constraint firstItem="Fzg-Jf-q91" firstAttribute="top" secondItem="JBh-84-GGc" secondAttribute="bottom" constant="-35" id="7xU-0G-Cpt"/>
                                             <constraint firstAttribute="bottom" secondItem="RQo-i8-6aZ" secondAttribute="bottom" id="A7F-oP-mOe"/>
                                             <constraint firstItem="RQo-i8-6aZ" firstAttribute="leading" secondItem="YLG-lP-BQo" secondAttribute="leading" id="Ava-kR-7lC"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Fzg-Jf-q91" secondAttribute="trailing" constant="32" id="Kwp-Jh-mgY"/>
+                                            <constraint firstItem="Fzg-Jf-q91" firstAttribute="leading" secondItem="YLG-lP-BQo" secondAttribute="leadingMargin" constant="32" id="ZKE-0j-3Ea"/>
                                             <constraint firstItem="JBh-84-GGc" firstAttribute="centerY" secondItem="YLG-lP-BQo" secondAttribute="centerY" constant="-50" id="cFf-uW-h1P"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="cardContainer" destination="RQo-i8-6aZ" id="5x5-tj-Cqi"/>
                                             <outlet property="compass" destination="JBh-84-GGc" id="v3K-fi-Gf7"/>
+                                            <outlet property="distanceLabel" destination="Fzg-Jf-q91" id="j9T-XZ-leR"/>
                                             <outlet property="nameLabel" destination="Kbf-rL-uD1" id="zIp-ps-sP3"/>
                                             <outlet property="subnameLabel" destination="bjD-He-C2O" id="45y-QC-sZ6"/>
                                         </connections>

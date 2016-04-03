@@ -155,12 +155,12 @@ class CatalogController: UIViewController, UICollectionViewDataSource, UICollect
         self.updateBackground()
     }
     
-    func accessibilityScrollStatusForScrollView(scrollView: UIScrollView) -> String? {
-        let xOffset = scrollView.contentOffset.x
-        let page: Int = Int(round(xOffset / scrollView.bounds.width))
-        let thing = thingsSortedByAngle[page]
-        return "Page \(page) of \(thingsSortedByAngle.count): \(thing.name)"
-    }
+//    func accessibilityScrollStatusForScrollView(scrollView: UIScrollView) -> String? {
+//        let xOffset = scrollView.contentOffset.x
+//        let page: Int = Int(round(xOffset / scrollView.bounds.width))
+//        let thing = thingsSortedByAngle[page]
+//        return "Page \(page) of \(thingsSortedByAngle.count): \(thing.name)"
+//    }
 }
 
 

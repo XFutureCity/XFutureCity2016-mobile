@@ -21,6 +21,9 @@ class CatalogCell : UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cardContainer: UIView!
     @IBOutlet weak var compass: DirectionView!
+    @IBOutlet weak var distanceLabel: UILabel!
+    
+    // Optionals
     @IBOutlet weak var ligne3: UILabel?
     @IBOutlet weak var ligne7: UILabel?
     @IBOutlet weak var ligne8: UILabel?
@@ -48,20 +51,37 @@ class CatalogCell : UICollectionViewCell {
     }
     
     func update(thing: Thing, device: Device) {
+        let distance = device.distanceTo(thing)
+        distanceLabel.text = NSString(format: "%.1f meters", distance) as String
+        
         nameLabel.text = thing.name
         cardContainer.backgroundColor = thing.uiColor
         nameLabel.textColor = thing.uiColor == UIColor.whiteColor() ? .blackColor() : .whiteColor()
         subnameLabel.textColor = nameLabel.textColor
         compass.tintColor = thing.uiColor
         
+        let rads = degreesToRadians(device.angleTo(thing)) - degreesToRadians(device.angle())
+        compass.setPosition(rads, distance: distance)
+        
+        self.setupLines()
+        self.setupAccessibility(thing)
+    }
+    
+    private func setupLines() {
         ligne3?.layer.borderColor = UIColor.whiteColor().CGColor
         ligne3?.layer.borderWidth = 1.0
         ligne7?.layer.borderColor = UIColor.whiteColor().CGColor
         ligne7?.layer.borderWidth = 1.0
         ligne8?.layer.borderColor = UIColor.whiteColor().CGColor
         ligne8?.layer.borderWidth = 1.0
+    }
+    
+    private func setupAccessibility(thing: Thing) {
+        var accessibilityLabel = thing.name + " (Things to \(thing.dataType)). "
+        if let compassAccesibilityLabel = compass.accessibilityLabel {
+            accessibilityLabel += compassAccesibilityLabel + "."
+        }
         
-        let rads = degreesToRadians(device.angleTo(thing)) - degreesToRadians(device.angle())
-        compass.angle = rads
+        nameLabel.accessibilityLabel = accessibilityLabel
     }
 }

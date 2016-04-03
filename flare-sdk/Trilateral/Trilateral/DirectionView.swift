@@ -17,30 +17,37 @@ func radiansToDegrees(angle: Double) -> Double {
 
 class DirectionView : UIImageView {
     
-    var angle: Double = 0.0 {
-        didSet(value) {
-            self.transform = CGAffineTransformMakeRotation(CGFloat(value));
-            self.applyAccessibilityLabel()
-            self.isAccessibilityElement = true
-            self.accessibilityTraits = UIAccessibilityTraitStaticText
-        }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.accessibilityHint = "Your position from this place"
     }
     
-    private func applyAccessibilityLabel() {
+    func setPosition(angle: Double, distance: Double) {
+        self.transform = CGAffineTransformMakeRotation(CGFloat(angle));
+        self.setupAccessibility(angle, distance: distance)
+        self.isAccessibilityElement = true
+        self.accessibilityTraits = UIAccessibilityTraitStaticText
+    }
+    
+    private func setupAccessibility(angle: Double, distance: Double) {
         let degrees = radiansToDegrees(angle)
         let degreesNormalized = degrees < 0 ? 360 + degrees : degrees
+        var accessibilityLabel = ""
         switch degreesNormalized {
         case 45..<135:
-            self.accessibilityLabel = "Right"
+            accessibilityLabel += "On your right"
             
         case 135..<225:
-            self.accessibilityLabel = "Behind"
+            accessibilityLabel += "Behind you"
             
         case 225..<315:
-            self.accessibilityLabel = "Left"
+            accessibilityLabel += "On your left"
             
         default:
-            self.accessibilityLabel = "Ahead"
+            accessibilityLabel += "In front of you"
         }
+        
+        accessibilityLabel += ", at " + (NSString(format: "%.1f meters", distance) as String)
+        self.accessibilityLabel = accessibilityLabel
     }
 }
