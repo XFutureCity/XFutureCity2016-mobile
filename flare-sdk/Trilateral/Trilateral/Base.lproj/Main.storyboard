@@ -1376,10 +1376,10 @@
         <image name="Fullcircle - Icon.png" width="18" height="18"/>
         <image name="Logo" width="225" height="225"/>
         <image name="Map" width="25" height="25"/>
-        <image name="Museum-Icon.png" width="46" height="46"/>
-        <image name="Pharmacie-Icon.png" width="46" height="46"/>
-        <image name="Restaurant-Icon.png" width="46" height="46"/>
-        <image name="Subway-Icon.png" width="46" height="46"/>
+        <image name="Museum-Icon.png" width="38" height="38"/>
+        <image name="Pharmacie-Icon.png" width="38" height="38"/>
+        <image name="Restaurant-Icon.png" width="38" height="38"/>
+        <image name="Subway-Icon.png" width="38" height="38"/>
         <image name="Thing" width="25" height="25"/>
         <image name="compass" width="25" height="25"/>
         <image name="vignette.png" width="750" height="1334"/>

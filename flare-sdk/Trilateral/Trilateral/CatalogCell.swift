@@ -21,7 +21,6 @@ class CatalogCell : UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cardContainer: UIView!
     @IBOutlet weak var compass: DirectionView!
-    @IBOutlet weak var compass: UIView!
     @IBOutlet weak var ligne3: UILabel!
     @IBOutlet weak var ligne7: UILabel!
     @IBOutlet weak var ligne8: UILabel!
